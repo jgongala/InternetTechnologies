@@ -456,43 +456,7 @@ Vue.js offers a powerful feature called components, which allow you to create re
 Vue.js allows you to create reusable components. Here's a basic example of creating a component:
 
 ![step16](https://github.com/jgongala/InternetTechnologies/assets/65823190/5341ca96-af1b-4143-adf0-25ee9304957f)
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Include Vue.js library -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-</head>
-<body>
-    <div id="app">
-        <my-component></my-component>
-    </div>
 
-    <script>
-        // Define and mount the Vue instance
-        new Vue({
-            el: '#app',
-            components: {
-                'my-component': {
-                    template: `
-                        <div>
-                            <h1>{{ title }}</h1>
-                            <p>{{ content }}</p>
-                        </div>
-                    `,
-                    data() {
-                        return {
-                            title: 'My Component',
-                            content: 'This is a simple Vue.js component.',
-                        };
-                    },
-                },
-            },
-        });
-    </script>
-</body>
-</html>
-```
 ![step17](https://github.com/jgongala/InternetTechnologies/assets/65823190/46164e47-8629-4f9c-8424-1901239dc891)
 
 **HTML Structure**
