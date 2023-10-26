@@ -456,7 +456,50 @@ Vue.js offers a powerful feature called components, which allow you to create re
 Vue.js allows you to create reusable components. Here's a basic example of creating a component:
 
 ![step16](https://github.com/jgongala/InternetTechnologies/assets/65823190/5341ca96-af1b-4143-adf0-25ee9304957f)
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vue App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="item in items">{{ item }}</li>
+        </ul>
 
+        <ul>
+            <li v-for="(item, index) in items">{{ index + 1 }}. {{ item }}</li>
+        </ul>
+
+        <ul>
+            <li v-for="(value, key) in user">{{ key }}: {{ value }}</li>
+        </ul>
+
+        <ul>
+            <li v-for="n in 5">Item {{ n }}</li>
+        </ul>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                items: ['Item 1', 'Item 2', 'Item 3'],
+                user: {
+                    name: 'John Doe',
+                    age: 30,
+                    occupation: 'Developer'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+```
 ![step17](https://github.com/jgongala/InternetTechnologies/assets/65823190/46164e47-8629-4f9c-8424-1901239dc891)
 
 **HTML Structure**
