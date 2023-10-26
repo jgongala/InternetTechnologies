@@ -122,9 +122,9 @@ source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.m
 
 **JavaScript Vue.js Initialization**
 
-- new Vue({}) It creates a new Vue instance.
-- el: '#app' : specifies that the Vue instance will control the element with the id "app."
-- data: { message: 'Hello, Vue.js!’ } defines initial data for data binding.
+- `new Vue({})` It creates a new Vue instance.
+- `el: '#app'` : specifies that the Vue instance will control the element with the id "app."
+- `data: { message: 'Hello, Vue.js!’ }` defines initial data for data binding.
 
 
 ![Slide10](https://github.com/jgongala/InternetTechnologies/assets/65823190/f333a957-7767-45b6-a7c7-15049589d59e)
