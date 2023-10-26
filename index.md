@@ -116,33 +116,29 @@ Text in the <p> element is bound to the ‘message’ property
 ## Code Explanation
 **HTML:**
 
-<!DOCTYPE html> for defining the document type.
+- `<!DOCTYPE html>`: Defines the document type.
+- `<html>`: Begins the HTML document.
+- `<head>`: Contains meta-information and linked scripts/stylesheets.
+- `<title>`: Specifies the page title.
+- `<script>`: Links to the Vue.js library using a CDN (Content Delivery Network).
+- `<body>`: Contains the main content.
 
-<html> Beginning of HTML doc
+# Vue.js Setup
 
-<head> for meta-info and linked scripts/ stylesheets
+- `<div id="app">`: Serves as the Vue container.
+- `<p>{{ message }}</p>`: Demonstrates data binding.
+- `<input v-model="message">`: Illustrates two-way binding.
 
-<title> for page title.
+# JavaScript Vue.js Initialization
 
-<script> - Links to the Vue.js library using a CDN (Content Delivery Network).
-
-<body> contains content.
-
-**Vue.js Setup:**
-
-<div id="app"> as Vue container.
-
-<p>{{ message }}</p> for data binding.
-
-<input v-model="message"> for two-way binding**.**
-
-**JavaScript initializes Vue:**
-
-new Vue({}) It creates a new Vue instance.
-
-el: '#app' : specifies that the Vue instance will control the element with the id "app."
-
-data: { message: 'Hello, Vue.js!’ } defines initial data for data binding.
+```
+new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello, Vue.js!'
+  }
+});
+```
 
 ![Slide10](https://github.com/jgongala/InternetTechnologies/assets/65823190/f333a957-7767-45b6-a7c7-15049589d59e)
 
@@ -187,14 +183,72 @@ As depicted in the code below:
 </html>
 ```
 
-The button element has an on attribute for mouse click which will call the increment function when the mouse is clicked.
+![Slide11](https://github.com/jgongala/InternetTechnologies/assets/65823190/efe0bfb3-4085-4e08-b22d-8b9d2c207bbe)
 
-Line 11 is a standard javascript short format if then else structure which ensures that if the count is exactly 1 the button will display the singular term of 'time'.
+## Code Explanation
 
-![Slide10](images/Slide10.png)
-The $: syntax introduces a reactive variable which will result in an update of the display when it is changed.  This maintains the value of doubled as count * 2.  Note that the $: syntax is not needed in the display line 15.
+**HTML:**
 
-![Slide11](images/Slide11.png)
+- `<!DOCTYPE html>`: Defines the document type.
+  
+- `<html>`: Begins the HTML document.
+  
+- `<head>`: Contains meta-information and linked scripts/stylesheets.
+  
+- `<title>`: Specifies the page title.
+  
+- `<script>`: Links to the Vue.js library using a CDN (Content Delivery Network).
+  
+- `<body>`: Contains the main content.
+
+**Vue.js Setup:**
+
+- `<div id="app">`: Serves as the Vue container.
+
+- `<p>{{ greeting }}</p>`: Demonstrates data binding.
+
+- `<button v-on:click="sayHello">`: Specifies that the `sayHello` method should be called when the button is clicked.
+
+**JavaScript initializes Vue:**
+
+- `new Vue({})`: Creates a new Vue instance.
+
+- `el: '#app'`: Specifies that the Vue instance will control the element with the ID "app."
+
+- `data: { greeting: '' }`: The data option defines the initial data for the Vue instance, setting the `greeting` property to an empty string.
+
+- `methods: { sayHello: function() { ... } }`: Defines custom methods that can be called from the Vue instance. In this case, it sets the `greeting` property to 'Hello, Vue.js!' when the button is clicked.
+
+![Slide12](https://github.com/jgongala/InternetTechnologies/assets/65823190/2b89a93a-de8c-45f2-a56c-203cab9a5419)
+
+## Interactions with other technologies
+
+Vue.js is designed to be highly compatible and easily integrated with other technologies commonly used in web development.
+
+**HTML Integration:**
+**Templates:**
+-Vue.js employs HTML-based templates for UI design.
+
+-Ease of use: templates resemble standard HTML.
+
+-Dynamic & responsive UIs through data and directive binding.
+
+**Custom HTML Attributes:**
+
+-Vue.js enhances HTML with custom attributes called directives.
+
+-Directives like v-bind and v-on add specific behaviors to elements.
+
+**Component-Based Structure:**
+
+-Vue.js advocates component-based architecture.
+
+-Components encapsulate HTML, CSS, and JavaScript.
+
+-Organizes and modularizes code for complex UIs.
+
+
+
 The last basic example reviewed here is the array example.  The svelte syntax does not introduce much new, but this is a good reminder of some javascript syntax.
 
 ... spreads the array elements out and then another element is added.  This makes numbers in line 5 change when the addNumber function is called.
