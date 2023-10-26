@@ -143,10 +143,49 @@ new Vue({}) It creates a new Vue instance.
 el: '#app' : specifies that the Vue instance will control the element with the id "app."
 
 data: { message: 'Hello, Vue.js!’ } defines initial data for data binding.
-    
 
-![Slide9](images/Slide9.png)
-This script provides a counter defined outside a function which increments it.   No need to use hooks at this point.
+![Slide10](https://github.com/jgongala/InternetTechnologies/assets/65823190/f333a957-7767-45b6-a7c7-15049589d59e)
+
+## Simple Examples - Event Handling
+
+**Showcase Vue.js Event handling**
+
+-Clicking on the "Click me" button to triggers the “sayHello” method
+
+-updates the greeting property to display a message
+
+As depicted in the code below:
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vue.js Event Handling Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <button v-on:click="sayHello">Say Hello</button>
+    <p>{{ greeting }}</p>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        greeting: ''
+      },
+      methods: {
+        sayHello: function () {
+          this.greeting = 'Hello from Vue.js!';
+        },
+      },
+    });
+  </script>
+</body>
+</html>
+```
 
 The button element has an on attribute for mouse click which will call the increment function when the mouse is clicked.
 
