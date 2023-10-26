@@ -87,7 +87,7 @@ Text in the <p> element is bound to the ‘message’ property
 -When you type in the input field
 
 -The text in the <p> element updates in real-time, as depicted in the images below:
-```html
+```
 <!DOCTYPE html>
 <html>
 <head>
