@@ -16,7 +16,7 @@ Come to think of it React is not sufficient on its own you customarily include R
 
 ### Svelte
 
-![Image Alt Text](images/Slide3.png)
+![Image Alt Text](InternetTechnologies/images/Slide3.png)
 The Svelte website has a good sequence of tutorials presented within an interactive online editor.
 
 The four sections discuss basic and advanced Svelte and then basic and advanced SvelteKit framework.
