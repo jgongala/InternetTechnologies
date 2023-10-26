@@ -71,10 +71,10 @@ source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.m
 
 **Demonstrating Vue.js Data Binding**
 
-Text in the <p> element is bound to the ‘message’ property
-
+- Text in the <p> element is bound to the ‘message’ property
 - When you type in the input field
-- The text in the <p> element updates in real-time, as depicted in the images below:
+- The text in the <p> element updates in real-time, as depicted in the code below:
+- 
 ```
 <!DOCTYPE html>
 <html>
@@ -392,24 +392,34 @@ So, the developers should consider its smaller ecosystem and potential limitatio
 ## Deploying on AWS
 
 **Create**
-1\. Create AWS Account
-2\. Create EC2 Instance
-3\. Create Apache2 server
-4\. Upload Your Web App Files
+1. Create AWS Account
+
+2. Create EC2 Instance
+
+3. Create Apache2 server
+
+4. Upload Your Web App Files
 
 ![Slide27](https://github.com/jgongala/InternetTechnologies/assets/65823190/9505c9d2-6a2a-41ff-81b6-920d7427f268)
 
 ## 	Deploying on AWS - Create EC2 Instance 
 **Create EC2 instance:** By following these steps:
 
-1\. Sign into your AWS account following this link: <https://aws.amazon.com/>
-2\. Click on EC2 dashboard.
-3\. Launch a new EC2 instance
-4\. Select an Amazon Machine Image (AMI) with a Linux distribution.
-5\. Configure instance details, including network settings and security groups.
-6\. Review and launch the instance.
-7\. Create or use an existing key pair for SSH access.
-8\. Launch the instance.
+1. Sign into your AWS account following this link: <https://aws.amazon.com/>
+
+2. Click on EC2 dashboard.
+
+3. Launch a new EC2 instance
+
+4. Select an Amazon Machine Image (AMI) with a Linux distribution.
+
+5. Configure instance details, including network settings and security groups.
+
+6. Review and launch the instance.
+
+7. Create or use an existing key pair for SSH access.
+
+8. Launch the instance.
 
 Now Connect to Your EC2 Instance
 
@@ -419,9 +429,9 @@ Now Connect to Your EC2 Instance
 
 **Install web server:**
 
-1\. Update the package manager and install Apache.
+1. Update the package manager and install Apache.
 
-2\. Configure Apache to serve your web app
+2. Configure Apache to serve your web app
 
 **Upload Your Web App Files:**
 
