@@ -110,8 +110,26 @@ Text in the <p> element is bound to the ‘message’ property
     </script>
 </body>
 </html>
+```
+![Slide9](https://github.com/jgongala/InternetTechnologies/assets/65823190/4432e630-6e4e-4a50-a6cc-3aa0d0e0aad3)
 
-![Slide8](images/Slide8.png)
+## Code Explanation
+**HTML:**
+
+<!DOCTYPE html> for defining the document type.
+
+<html> Beginning of HTML doc
+
+<head> for meta-info and linked scripts/ stylesheets
+
+<title> for page title.
+
+<script> - Links to the Vue.js library using a CDN (Content Delivery Network).
+
+<body> contains content.
+
+
+
 Whilst React would try to interpret `<strong/>` as JSX, svelte does not interpret this by default so the result of line 5 is to print the text literally.
 
 The inclusion on line 6 of @html causes the html to be interpreted and produce bold text.
