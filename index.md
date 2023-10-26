@@ -476,13 +476,20 @@ Before you begin, make sure you have the following prerequisites installed on yo
 
 Vue CLI is a tool for scaffolding Vue.js projects. Install it globally on your system using npm:
 
+![step1](https://github.com/jgongala/InternetTechnologies/assets/65823190/b0f7ff4d-c1ad-4866-90e6-fec97d8df58a)
+
 ```bash
 npm install -g @vue/cli
 ```
 
+
+
 ## Step 2: Create a New Vue Project
 
 Once Vue CLI is installed, navigate to the directory where you want to create your project and run the following command:
+
+![step2](https://github.com/jgongala/InternetTechnologies/assets/65823190/b7c73b9f-c72b-4cbc-9190-20ee1250830d)
+
 
 ```bash
 vue create weather-app
@@ -504,6 +511,8 @@ This project structure provides a solid foundation for organizing your Vue.js ap
 ## Step 4: Start the Development Server
 
 To view your Vue.js app, start the development server. Navigate to the project directory and run the following commands:
+
+![step3](https://github.com/jgongala/InternetTechnologies/assets/65823190/1d9abfe1-aa84-4f1e-84db-0b0910ea11af)
 
 ```bash
 cd weather-app
@@ -559,9 +568,11 @@ To create a Vue.js instance in an HTML file, you first need to include the Vue.j
 
 ## Step 2: Create Your Vue Instance
 
-Now, you can define your Vue instance within a `<script>` tag at the end of your HTML file, just before the closing `</body>` tag. Here's an example of creating a simple Vue instance:
+Now, you can define your Vue instance within a `<script>` tag at the end of your HTML file, just before the closing `</body>` tag. Here's an example of creating a simple Vue instance!
 
-```html
+[step6](https://github.com/jgongala/InternetTechnologies/assets/65823190/fd88edc4-b1c2-4650-8b4b-545e4c2d0ebf)
+
+```
 <body>
     <div id="app">
         {{ message }}
@@ -577,7 +588,6 @@ Now, you can define your Vue instance within a `<script>` tag at the end of your
         });
     </script>
 </body>
-
 ```
 
 In this example, we create a Vue instance with the `new Vue()` constructor. We specify the `el` property to define the HTML element with the id "app" as the mounting point for our Vue instance. The `data` property contains the data that Vue.js will manage, in this case, a `message` property with the value "Hello, Vue!"
@@ -594,6 +604,8 @@ That's it! You've created a basic Vue instance in an HTML file. You can build up
 
 1. Interpolation
 
+https://github.com/jgongala/InternetTechnologies/assets/65823190/1e1f4e94-fe8a-4d88-830f-384fbe887ea4
+
 Vue.js allows you to interpolate data into your template using double curly braces `{{ }}`. This is one of the most common ways to display dynamic data in your HTML.
 
 ```html
@@ -608,9 +620,11 @@ Interpolation is a simple and effective way to display dynamic data in your Vue.
 
 2. v-bind Directive:
 
+https://github.com/jgongala/InternetTechnologies/assets/65823190/346e3b97-bdc6-491f-af41-111f305b7cb8
+
 To bind HTML attributes to data, you can use the `v-bind` directive. For example:
 
-```html
+```
     <div id="app">
         <a v-bind:href="dynamicUrl">Visit Google</a>
     </div>
@@ -633,7 +647,7 @@ Inside the `data` section of the Vue instance:
 
 This setup allows the Vue instance to manage the `dynamicUrl` property, and any changes to it will automatically update the URL in the link.
 
-```html
+```
     <script>
         new Vue({
             el: '#app',
@@ -656,7 +670,7 @@ This example demonstrates the power of data binding in Vue.js for creating dynam
 
 The `v-on` directive in Vue.js is used to listen to events and execute methods when those events occur. It allows you to create interactive and responsive user interfaces by defining event listeners and specifying what should happen when those events are triggered. For example
 
-```html
+```
 <div id="app">
     <button v-on:click="doSomething">Click me</button>    
 </div>
@@ -679,6 +693,8 @@ In this code snippet, we have a Vue.js application. Let's break it down:
 </script>
 ```
 
+![step11](https://github.com/jgongala/InternetTechnologies/assets/65823190/be16af78-8718-4973-b444-e5ee3a815518)
+
 In the script section, we are creating a Vue instance and defining its behavior. Let's break down the script:
 
 - We create a new Vue instance using `new Vue()`.
@@ -689,7 +705,7 @@ In the script section, we are creating a Vue instance and defining its behavior.
 
 ## Vue.js Methods and Event Handling
 
-```html
+```
 <div id="app">
     <button v-on:click="doSomething">Click me</button>    
 </div>
@@ -779,6 +795,7 @@ This is a fundamental example of how Vue.js allows you to define methods and han
 </body>
 </html>
 ```
+![step13](https://github.com/jgongala/InternetTechnologies/assets/65823190/3f0cd938-329c-426e-bd19-ae8af65d1a36)
 
 In this code example, we demonstrate how to implement conditional rendering in Vue.js using the `v-if`, `v-else-if`, and `v-else` directives. These directives allow you to display or hide content based on specific conditions.
 
@@ -808,7 +825,7 @@ This example serves as a practical demonstration of Vue.js's capabilities in han
 
 2. v-for: Use this directive for rendering lists of data.
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -852,6 +869,7 @@ This example serves as a practical demonstration of Vue.js's capabilities in han
 </body>
 </html>
 ```
+![step15](https://github.com/jgongala/InternetTechnologies/assets/65823190/ceb26da0-fbc1-4ae6-9be8-6b04b34b41c9)
 
 **Rendering Lists in Vue.js:**
 
@@ -905,7 +923,7 @@ Vue.js offers a powerful feature called components, which allow you to create re
 **Creating a Vue.js Component:**
 Vue.js allows you to create reusable components. Here's a basic example of creating a component:
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -942,6 +960,7 @@ Vue.js allows you to create reusable components. Here's a basic example of creat
 </body>
 </html>
 ```
+![step17](https://github.com/jgongala/InternetTechnologies/assets/65823190/69d64828-c1f0-43a2-a4c2-7511c3750b95)
 
 **HTML Structure**
 Within the `<body>`, you'll find a `<div>` element with the id of "app." This element serves as the mounting point for our Vue instance, where we'll render our Vue component.
