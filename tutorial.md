@@ -494,8 +494,6 @@ Vue.js allows you to create reusable components. Here's a basic example of creat
 </html>
 ```
 
-
-
 ![step17](https://github.com/jgongala/InternetTechnologies/assets/65823190/69d64828-c1f0-43a2-a4c2-7511c3750b95)
 
 **HTML Structure**
