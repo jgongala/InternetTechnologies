@@ -29,11 +29,8 @@ So first, Let's dive into the world of Vue.js
 Vue.js, often referred to as Vue, is an open-source “JavaScript” framework which is launched in 2014 by “*Evan You*”.
 
 -Vue.js has gained remarkable popularity in web development that notable for its simplicity and flexibility.
-
 -Rapidly becoming one of the most sought-after front-end frameworks.
-
 -Strong ecosystem of libraries and tools.
-
 -Growing community of developers which has garnered a significant following in recent years.
 
 By examining the GitHub community for development and the Stack Overflow community for problem-solving and learning, we can make an informed assessment of Vue.js's popularity and support, as depicted in the image below.
@@ -49,13 +46,9 @@ source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.m
 ## Purpose
 
 -Make web application development more manageable and efficient.
-
 -Provides a progressive framework.
-
 -Incremental Adoption which can be incrementally adopted into projects of all sizes.
-
 -Versatility: Suitable for both simple Single-Page Applications (SPAs) and complex enterprise-level systems.
-
 -Empowerment: Empowers developers to craft user interfaces with ease.
 
 ![Slide6](https://github.com/jgongala/InternetTechnologies/assets/65823190/2008a7e4-6752-4dcb-8aab-6e97c43911d8)
@@ -63,13 +56,9 @@ source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.m
 ## Who Uses It
 
 -Diverse Adoption: It is trusted by a diverse range of organizations and developers worldwide like these companies like Alibaba, Xiaomi, and Adobe, among others, have adopted Vue.js for their web projects.
-
 -Accessible to All: Its approachable learning curve accommodates developers of all skill levels, from startups to established tech giants.
-
 -In Summary: Vue.js is known for its simplicity, flexibility, and broad user base, empowering efficient development of dynamic and interactive web applications.
-
 -All that make Vue.js A Trusted Framework Worldwide
-
 -Here are some examples of companies that use Vue.js in their projects
 
 ![Slide7](https://github.com/jgongala/InternetTechnologies/assets/65823190/959c86e7-ee41-46e3-b8ba-25b064f33e47)
@@ -85,7 +74,6 @@ source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.m
 Text in the <p> element is bound to the ‘message’ property
 
 -When you type in the input field
-
 -The text in the <p> element updates in real-time, as depicted in the images below:
 ```
 <!DOCTYPE html>
@@ -141,11 +129,8 @@ Text in the <p> element is bound to the ‘message’ property
 ## Simple Examples - Event Handling
 
 **Showcase Vue.js Event handling**
-
 -Clicking on the "Click me" button to triggers the “sayHello” method
-
 -updates the greeting property to display a message
-
 As depicted in the code below:
 ```
 <!DOCTYPE html>
