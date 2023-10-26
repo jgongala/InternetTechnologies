@@ -472,12 +472,12 @@ Vue.js allows you to create reusable components. Here's a basic example of creat
             el: '#app',
             components: {
                 'my-component': {
-                    template: `
+                    template: 
                         <div>
                             <h1>{{ title }}</h1>
                             <p>{{ content }}</p>
                         </div>
-                    `,
+                    ,
                     data() {
                         return {
                             title: 'My Component',
