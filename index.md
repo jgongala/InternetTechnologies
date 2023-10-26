@@ -74,7 +74,9 @@ source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.m
 - Text in the <p> element is bound to the ‘message’ property
 - When you type in the input field
 - The text in the <p> element updates in real-time, as depicted in the code below:
-- 
+
+  
+  
 ```
 <!DOCTYPE html>
 <html>
@@ -99,6 +101,7 @@ source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.m
 </body>
 </html>
 ```
+
 ![Slide9](https://github.com/jgongala/InternetTechnologies/assets/65823190/4432e630-6e4e-4a50-a6cc-3aa0d0e0aad3)
 
 ## Code Explanation
@@ -132,6 +135,8 @@ source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.m
 - Clicking on the "Click me" button to triggers the “sayHello” method
 - updates the greeting property to display a message
 As depicted in the code below:
+
+
 ```
 <!DOCTYPE html>
 <html>
@@ -163,6 +168,7 @@ As depicted in the code below:
 </body>
 </html>
 ```
+
 
 ![Slide11](https://github.com/jgongala/InternetTechnologies/assets/65823190/efe0bfb3-4085-4e08-b22d-8b9d2c207bbe)
 
