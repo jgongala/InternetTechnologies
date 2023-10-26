@@ -483,7 +483,6 @@ npm install -g @vue/cli
 ```
 
 
-
 ## Step 2: Create a New Vue Project
 
 Once Vue CLI is installed, navigate to the directory where you want to create your project and run the following command:
@@ -604,7 +603,7 @@ That's it! You've created a basic Vue instance in an HTML file. You can build up
 
 1. Interpolation
 
-https://github.com/jgongala/InternetTechnologies/assets/65823190/1e1f4e94-fe8a-4d88-830f-384fbe887ea4
+https://github.com/jgongala/InternetTechnologies/assets/65823190/346e3b97-bdc6-491f-af41-111f305b7cb8
 
 Vue.js allows you to interpolate data into your template using double curly braces `{{ }}`. This is one of the most common ways to display dynamic data in your HTML.
 
@@ -620,7 +619,7 @@ Interpolation is a simple and effective way to display dynamic data in your Vue.
 
 2. v-bind Directive:
 
-https://github.com/jgongala/InternetTechnologies/assets/65823190/346e3b97-bdc6-491f-af41-111f305b7cb8
+https://github.com/jgongala/InternetTechnologies/assets/65823190/1e1f4e94-fe8a-4d88-830f-384fbe887ea4
 
 To bind HTML attributes to data, you can use the `v-bind` directive. For example:
 
