@@ -28,10 +28,10 @@ So first, Let's dive into the world of Vue.js
 
 Vue.js, often referred to as Vue, is an open-source “JavaScript” framework which is launched in 2014 by “*Evan You*”.
 
--Vue.js has gained remarkable popularity in web development that notable for its simplicity and flexibility.
--Rapidly becoming one of the most sought-after front-end frameworks.
--Strong ecosystem of libraries and tools.
--Growing community of developers which has garnered a significant following in recent years.
+- Vue.js has gained remarkable popularity in web development that notable for its simplicity and flexibility.
+- Rapidly becoming one of the most sought-after front-end frameworks.
+- Strong ecosystem of libraries and tools.
+- Growing community of developers which has garnered a significant following in recent years.
 
 By examining the GitHub community for development and the Stack Overflow community for problem-solving and learning, we can make an informed assessment of Vue.js's popularity and support, as depicted in the image below.
 
@@ -197,20 +197,20 @@ Vue.js is designed to be highly compatible and easily integrated with other tech
 
 **HTML Integration:**
 **Templates:**
--Vue.js employs HTML-based templates for UI design.
--Ease of use: templates resemble standard HTML.
--Dynamic & responsive UIs through data and directive binding.
+- Vue.js employs HTML-based templates for UI design.
+- Ease of use: templates resemble standard HTML.
+- Dynamic & responsive UIs through data and directive binding.
 
 **Custom HTML Attributes:**
 
--Vue.js enhances HTML with custom attributes called directives.
--Directives like v-bind and v-on add specific behaviors to elements.
+- Vue.js enhances HTML with custom attributes called directives.
+- Directives like v-bind and v-on add specific behaviors to elements.
 
 **Component-Based Structure:**
 
--Vue.js advocates component-based architecture.
--Components encapsulate HTML, CSS, and JavaScript.
--Organizes and modularizes code for complex UIs.
+- Vue.js advocates component-based architecture.
+- Components encapsulate HTML, CSS, and JavaScript.
+- Organizes and modularizes code for complex UIs.
 
 
 
