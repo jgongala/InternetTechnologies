@@ -237,6 +237,8 @@ Vue.js is designed to be highly compatible and easily integrated with other tech
 - State management for large applications.
 - Centralizes and manages application state and integrates seamlessly with Vue components.
 
+![Slide14](https://github.com/jgongala/InternetTechnologies/assets/65823190/415c2c9f-3760-4c47-b6a5-1415704caa84)
+
 # Third-Party Libraries:
 **Compatibility & Integration:**
 
@@ -246,7 +248,7 @@ Vue.js is designed to be highly compatible and easily integrated with other tech
 
 - Though Vue.js is front-end-centric, it efficiently interacts with RESTful APIs and backend technologies for data handling.
 
-![Slide14](https://github.com/jgongala/InternetTechnologies/assets/65823190/415c2c9f-3760-4c47-b6a5-1415704caa84)
+![Slide15](https://github.com/jgongala/InternetTechnologies/assets/65823190/0ee9e217-4985-4ee4-a068-6faa06f1798d)
 
 ## Vue.js in a System
 Vue.js plays a crucial role in the front-end of a web application and seamlessly integrates into larger systems. Let's explore how Vue.js fits into the architecture of a web application:
@@ -263,7 +265,7 @@ Vue.js plays a crucial role in the front-end of a web application and seamlessly
 
 - Vue.js enables the creation of highly interactive and responsive applicationsvia two-way data binding, improving real-time user experience.
 
-![Slide15](https://github.com/jgongala/InternetTechnologies/assets/65823190/0ee9e217-4985-4ee4-a068-6faa06f1798d)
+![Slide16](https://github.com/jgongala/InternetTechnologies/assets/65823190/aa649e2c-f7f7-47c8-9e96-2d6ad76b2437)
 
 ## Summary
 
@@ -273,7 +275,7 @@ It offers seamless integration with various backend technologies and a wide rang
 
 Vue.js ensures a responsive, interactive, and easily maintainable user experience.
 
-![Slide16](https://github.com/jgongala/InternetTechnologies/assets/65823190/aa649e2c-f7f7-47c8-9e96-2d6ad76b2437)
+![Slide17](https://github.com/jgongala/InternetTechnologies/assets/65823190/5f6f5523-2e63-4c3a-8e3b-076e7bd74022)
 
 ## USE CASE SCENARIOS
 
@@ -293,112 +295,155 @@ Slack
 
 - Vue.js enables the development of real-time chat applications that are interactive, responsive, and user-friendly. Vue's reactivity and component-based structure are instrumental in creating dynamic chat interfaces, allowing users to communicate seamlessly across different devices and browsers.
 
+![Slide18](https://github.com/jgongala/InternetTechnologies/assets/65823190/a323334d-2e46-4fd5-8755-a1eaff442089)
+
+*Dynamic E-Commerce Product Catalog*
+
+Vue Storefront
+
+- Vue Storefront is an open-source, headless Progressive Web App (PWA) built with Vue.js specifically for e-commerce. It provides a highly customizable and fast shopping experience. Vue Storefront can seamlessly integrate with various e-commerce backends like Magento, WooCommerce, and more.
+
+Typetura
+
+- Typetura is a typography tool that uses Vue.js to allow designers and developers to create dynamic and responsive typography. Vue's reactivity and component-based structure help users visualize changes in typography instantly.
+
+Vogue
+
+- Even major fashion brands like Vogue use Vue.js for their online platforms. Vue.js enables Vogue to showcase dynamic content, articles, and images while maintaining a smooth and engaging user experience.
+
+- Vue.js empowers developers to create interactive, responsive, and feature-rich web applications. It offers a seamless integration of front-end functionality with back-end systems, making it an ideal choice for building dynamic product catalogs in the e-commerce sector and beyond.
+
+![Slide19](https://github.com/jgongala/InternetTechnologies/assets/65823190/283a8b81-4fc6-477a-a491-b4b40247be6b)
+
+*Real-Time Dashboard for IoT Monitoring*
+
+Weather Monitoring Dashboard
+
+- Weather.com, a popular weather monitoring website, uses Vue.js for its interactive weather dashboard. Vue.js enables real-time updates of weather conditions, forecasts, and interactive maps, providing users with accurate and up-to-date information.
+
+Energy Consumption Monitoring
+
+- Smappee, an energy monitoring and management platform, utilizes Vue.js for its dashboard. Users can track real-time energy consumption, identify energy-saving opportunities, and control smart devices with ease.
+- Vue.js empowers developers to build real-time IoT monitoring dashboards that are interactive, responsive, and capable of handling large volumes of data from diverse sensors and devices. Vue's reactivity and component-based architecture make it an ideal choice for creating user-friendly interfaces that enable efficient monitoring and control of IoT ecosystems.
+
+![Slide20](https://github.com/jgongala/InternetTechnologies/assets/65823190/afdb9aed-248f-44d7-ad0b-65b701a6a15f)
+
+*Financial Dashboard*
+
+Yahoo Finance
+
+- Yahoo Finance, a popular financial news and data platform, utilizes Vue.js extensively. Vue.js powers the dynamic stock charts, real-time market data updates, and interactive portfolio tracking features, providing users with an informative and engaging experience.
+
+TradingView
+
+- TradingView, a widely used platform for traders and investors, relies on Vue.js for its advanced charting capabilities. Vue.js enables the creation of responsive and customizable stock charts, technical analysis tools, and real-time trading features.
+
+Financial News Aggregators
+
+- Websites like CNBC employ Vue.js to deliver real-time financial news updates, market analysis, and video content. Vue.js enables the integration of live data feeds and interactive multimedia elements, enhancing the user's financial news experience.
+- Vue.js empowers developers to create real-time financial dashboards that are not only visually appealing but also highly functional. Vue's reactivity and component-based structure make it well-suited for handling dynamic financial data, providing users with the latest market insights and financial information in a responsive and user-friendly manner.
+
+*Real-Time Collaborative Task Management Tool*
+
+ClickUp
+
+- ClickUp, an all-in-one productivity platform, relies on Vue.js for its task management capabilities. Vue.js enables the creation of customizable task lists, real-time chat, and integrations with various productivity tools.
+
+Trello
+
+- Trello, a popular project management and collaboration platform, uses Vue.js extensively. Vue.js powers the dynamic task boards, real-time updates, and collaborative features, making it easy for teams to manage projects efficiently.
+- Vue.js empowers developers to create real-time collaborative task management tools that enhance team productivity and project organization. Vue's reactivity and component-based architecture make it well-suited for building interactive and responsive interfaces that enable efficient task management and team collaboration.
+
+![Slide22](https://github.com/jgongala/InternetTechnologies/assets/65823190/6251ac93-16d6-41f0-a69d-cac5092f1121)
+
+Vue.js is essential to a contemporary e-learning platform since it offers a dynamic and interactive learning environment. Students get access to a wide variety of courses, each with interactive tests, video lectures, and discussion boards. Vue.js guarantees a fluid user experience that enables students to monitor their progress, turn in assignments, and participate in real-time discussions with peers and teachers. Due to its responsiveness and component-based design, this technology enables real-time content updates, device compatibility, and the creation of an engaging learning environment.
+
+![Slide23](https://github.com/jgongala/InternetTechnologies/assets/65823190/710e106e-d30d-4311-b9e2-25525e4adc9c)
+
+## Pros and Cons of using Vue.js
+
+![Slide24](https://github.com/jgongala/InternetTechnologies/assets/65823190/a5a9a23d-10e5-4fce-ac19-5eeb008f8fe1)
+
+**	Advantages of Vue.js: **
+
+- Easy Learning: ideal for all developers.
+- Reactivity: Automatic UI updates simplify state management.
+- Component-Based Architecture: Promotes modularity and reusability.
+- Vue Router: By making straightforward to create single-page applications.
+- Vuex: For state management in large apps. 
+- Performance: Due to the Vue.js features like virtual DOM and optimized rendering.
+- Flexible Integration: Easily fits into existing projects.
+- Active Community: Enthusiastic developer support through forums and social media.
+
+![Slide25](https://github.com/jgongala/InternetTechnologies/assets/65823190/d0430e63-2f7d-4e2f-8b17-a344937bf537)
+
+**	Disadvantages of Vue.js: **
+
+- Smaller Ecosystem: Fewer third-party resources compared to larger frameworks like React or Angular 
+- Large Apps: May not suit extremely complex and large projects; consider React or Angular. 
+- Limited corporate Backing: Largely community-maintained, raising long-term support concerns. 
+- Learning Advanced Features: Requires effort to master advanced features. 
+- Documentation Variety: Multiple tools with separate documentation sources such as Vue Router, Vuex, and Vue CLI. 
+
+So, the developers should consider its smaller ecosystem and potential limitations
+
+![Slide26](https://github.com/jgongala/InternetTechnologies/assets/65823190/3cf3e049-0489-4fa2-bcc5-417d3bfd7172)
+
+## Deploying on AWS
+
+**Create**
+1\. Create AWS Account
+2\. Create EC2 Instance
+3\. Create Apache2 server
+4\. Upload Your Web App Files
+
+![Slide27](https://github.com/jgongala/InternetTechnologies/assets/65823190/9505c9d2-6a2a-41ff-81b6-920d7427f268)
+
+## 	Deploying on AWS - Create EC2 Instance 
+**Create EC2 instance:** By following these steps:
+
+1\. Sign into your AWS account following this link: <https://aws.amazon.com/>
+2\. Click on EC2 dashboard.
+3\. Launch a new EC2 instance
+4\. Select an Amazon Machine Image (AMI) with a Linux distribution.
+5\. Configure instance details, including network settings and security groups.
+6\. Review and launch the instance.
+7\. Create or use an existing key pair for SSH access.
+8\. Launch the instance.
+
+Now Connect to Your EC2 Instance
+
+![Slide28](https://github.com/jgongala/InternetTechnologies/assets/65823190/8c2220d8-fe7f-4a0e-9c10-f987bf97be3a)
+
+##	Deploying on AWS – Instal web server & upload files!
+
+**Install web server:**
+
+1\. Update the package manager and install Apache.
+
+2\. Configure Apache to serve your web app
+
+**Upload Your Web App Files:**
+
+By connect your host to Visual Studio Code tool, and will allow you to modify your web app.
+
+Now Test your Web App through a web browser to ensure it is functioning correctly.
+
+![Slide29](https://github.com/jgongala/InternetTechnologies/assets/65823190/09393e78-66cb-4902-a8cb-95e1b4dc80b4)
+
+## Reference Notes:
+
+- Vue.js Official Documentation: <https://vuejs.org/>
+- Vue.js GitHub Repository: <https://github.com/vuejs/vue>
+- Vue Router Documentation: <https://router.vuejs.org/>
+- Vuex Documentation: <https://vuex.vuejs.org/>
+- Create EC2 instance: [https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html)[ec2-resources.html](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html)
+- Getting started with Amazon: [https://docs.aws.amazon.com/efs/latest/ug/getting-](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html) [started.html](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html)
+
+![Slide30](https://github.com/jgongala/InternetTechnologies/assets/65823190/6ae471ad-879e-4e7b-9f5d-130338a4f16e)
+
+## Questions ..?
 
 
 
-### SvelteKit
-
-![Slide13](images/Slide13.png)
-The website lists some of the features provided by SvelteKit.  This includes routing (without needing a separate router) and server side rendering.  Svelte will need to run on a suitable server.  For development the Vite development server is appropriate.
-
-The structure of the project directory includes a `src` folder with the app.html and a routes folder with at least on `+pages.svelte` file.
-
-![Slide14](images/Slide14.png)
-The html file contains a `<div>` which displays %sveltekit.body% this is the location where the svelteKit output will be rendered.
-
-There is no link required, the file which provides the output is the first `+page.svelte` in the routes folder.
-
-![Slide15](images/Slide15.png)
-A second display page can be added within a nested folder within routes.  The name of the folder, 'about' will provide the adress for navigation.  So this is unlike a web page navigation there is not an http://filename call.
-
-The routing syntax is simple and straightforward.
-
-![Slide16](images/Slide16.png)
-It would not be efficient to include the same navigation code on every page which needed it so the code can be incorporated into a layout.
-
-The `<slot/>` is the location on the layout where the content from the individual pages will be rendered.
-
-![Slide17](images/Slide17.png)
-Hopefully that is enough to be able to read through a demo file running in a docker development container.
-
-## Demo App
-
-![Slide18](images/Slide18.png)
-Start Docker desktop.
-
-Create and empty folder and then using CTRL + P ask the remote container plugin to open it in a container.  Follow the prompts to select a node plus typescript container and allow time for this to download content.
-
-When the container is ready check the version of node.
-
-Now create a svelte app using the latest svelte version.
-
-Follow the choice which creates the demo app.
-
-![Slide19](images/Slide19.png)
-Make choices to use Typescript syntax and to add the prettier code formatter.
-
-![Slide20](images/Slide20.png)
-With no further options selected the project comes to completion.
-
-There are a range of plug-ins for svelte which can be reviewed on github, however these are not required for the simple demonstration.
-
-![Slide21](images/Slide21.png)
-The package json file reflects the available vite scripts and the dependancies.
-
-![Slide22](images/Slide22.png)
-Change directory to the application folder and install the dependancies.
-
-After a wait the project is ready to run on the vite server with npm run dev.
-
-![Slide23](images/Slide23.png)
-The demo includes a navigation menu, a welcome image, some text and a counter.  These elements will be brought in from smaller files.
-
-![Slide24](images/Slide24.png)
-The Sverdle demo game mimics the operation of the popular wordle site which gives the option to guess a five letter word.  Correctly guessed letters have a border added and correctly placed letters are highlighted.
-
-Incorrectly guesse letters are grayed out on the alphabet display.
-
-![Slide25](images/Slide25.png)
-An example game is played out here from the first guess of 'bread' to the final correct word 'icily'.  Because the source words are provided from the server there is nothing in the browser which could allow the player to cheat.
-
-![Slide26](images/Slide26.png)
-Looking over the demo code the html has a place for sveltekit head and sveltekit body.  There is nothing of the displayed content here.
-
-![Slide27](images/Slide27.png)
-The layout provides the common content for all pages which includes text imnported from Header.svelte.
-
-The `<slot/>` in the main section is where individual page details will render.
-
-![Slide28](images/Slide28.png)
-The home page is the first `+page.svelte` in the routes folder.
-
-This includes the header information with the title 'home'.
-
-The counter is read from the counter file.  There is no need for an import statement, just use the `<Counter />` element reference.
-
-![Slide29](images/Slide29.png)
-The navigation bar is in the Header file which is called into the top of the layout for all pages in the app.
-
-![Slide30](images/Slide30.png)
-As with React, the application can be built on Vite and previewed to check that it is working.  The use of a different port indicates that this is a build preview.
-
-![Slide31](images/Slide31.png)
-Unlike react, the output is not an html/javascript file which can run from the live server.  
-
-To deploy the user must first install an adapter and then edit the svelte.config.js file to mathch the deployment target, such as a node server in this example.
-
-
-![Slide32](images/Slide32.png)
-A number of deployment targets exist and this does include a static HTML page where this is right for the application.
-
-![Slide33](images/Slide33.png)
-Looking at use cases on the svelte website it is evident that well functioned applications can be produced.
-
-![Slide34](images/Slide34.png)
-Here data visualisation is shown on a svelte page.
-
-The companies are real and significant, but tend not to be the larger companies which are still using the commercially supported frameworks such as react.
-
-![Slide35](images/Slide35.png)
-If you are willing to work with a system which is not as popular as the main players there is a benefit in code of server side rendering and a syntax which becomes comfortable to work with.
 
