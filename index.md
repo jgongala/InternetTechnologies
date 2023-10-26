@@ -1,33 +1,49 @@
-## Svelte Presentation
+## VUE.JS Deployment on AWS
 
-React is one of many frameworks which could be used for web app development, here is a brief introduction to an alternative which is popular with developers.
+![Slide1](https://github.com/jgongala/InternetTechnologies/assets/65823190/b436ad15-ed84-4168-8c76-cd349f4ddc0c)
 
-Most of the information here is drawn from the [Svelte Website](https://svelte.dev/) and if this taster is appealing you should follow up by going through the full tutorial sequence on that site.
+Team Members:
+Julia Gongala | B00402569
+Mustafa Jadoun | B00858426
+Sheen Shelton | B00384867
+Sunxing Yu | B01656116
 
-![Slide1](https://github.com/jgongala/InternetTechnologies/assets/65823190/7726bb11-11cc-4dc1-9821-ca4750d7f22d)
+![Slide2](https://github.com/jgongala/InternetTechnologies/assets/65823190/e0dd0c5d-72c9-408b-bf43-04a66f56a8cf)
 
-Presentation front page with presenter names and appropriate theme.
+## Introduction
 
-![Slide2](images/Slide2.png)
-React initially seems like a single framework so it may initially look as though Svelte is a framework and SvelteKit is some kind of development environment.
+Deploying Vue.js on AWS involves a series of essential steps to ensure a smooth and reliable operation. In this presentation, we will focus on the key components of deploying a Vue.js application on Amazon Web Services.
+Starting from setting up an “*Amazon EC2 instance*” to configuring “*Nginx*” as a reverse proxy, we will cover everything you need to know to make your *Vue.js* application publicly accessible and ensure high availability and optimal performance.
+So first, Let's dive into the world of Vue.js
 
-However, Svelte is actually a compliler to javascript modules which produces a very small code footprint.  SvelteKit is the framework.
+![Slide3](https://github.com/jgongala/InternetTechnologies/assets/65823190/ba6441a5-aa72-42e7-b80c-37b292654f77)
 
-Come to think of it React is not sufficient on its own you customarily include React Dom and may need other elements such as React Router.
+## Popularity
 
-### Svelte
+Vue.js, often referred to as Vue, is an open-source “JavaScript” framework which is launched in 2014 by “*Evan You*”.
+-Vue.js has gained remarkable popularity in web development that notable for its simplicity and flexibility.
+-Rapidly becoming one of the most sought-after front-end frameworks.
+-Strong ecosystem of libraries and tools.
+-Growing community of developers which has garnered a significant following in recent years.
 
-![Image Alt Text](InternetTechnologies/images/Slide3.png)
-The Svelte website has a good sequence of tutorials presented within an interactive online editor.
+By examining the GitHub community for development and the Stack Overflow community for problem-solving and learning, we can make an informed assessment of Vue.js's popularity and support, as depicted in the image below.
 
-The four sections discuss basic and advanced Svelte and then basic and advanced SvelteKit framework.
+### Popularity & Support image
 
-I hope that by following quickly through the first few sections of the svelte tutorial and the first few of the basic SvelteKit we can gain enough awareness of the syntax to follow through the operation of the svelte demo application.
+![Slide4](https://github.com/jgongala/InternetTechnologies/assets/65823190/26a13159-09f2-44f7-9ce2-6f414394a8a6)
 
-![Slide4](images/Slide4.png)
-First the svelte syntax.  The page has a script section and an html like section.
+source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.monterail.com/blog/vue-vs-react)website
 
-A script variable, name, can be passed as a property into the presentation section.  Since it is a string, string functions can be applied to it.
+![Slide5](https://github.com/jgongala/InternetTechnologies/assets/65823190/36ed0eac-7710-4b69-b08b-6b582081d8b8)
+
+## Purpose
+
+-Make web application development more manageable and efficient.
+-Provides a progressive framework.
+-Incremental Adoption which can be incrementally adopted into projects of all sizes.
+-Versatility: Suitable for both simple Single-Page Applications (SPAs) and complex enterprise-level systems.
+-Empowerment: Empowers developers to craft user interfaces with ease.
+
 
 ![Slide5](images/Slide5.png)
 Variables can also be included as properties in the attributes of an html element.
