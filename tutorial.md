@@ -358,50 +358,44 @@ This example serves as a practical demonstration of Vue.js's capabilities in han
 
 2. v-for: Use this directive for rendering lists of data.
 
+# Vue.js Component Example
+
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Vue App</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body>
     <div id="app">
-        <ul>
-            <li v-for="item in items">{{ item }}</li>
-        </ul>
-
-        <ul>
-            <li v-for="(item, index) in items">{{ index + 1 }}. {{ item }}</li>
-        </ul>
-
-        <ul>
-            <li v-for="(value, key) in user">{{ key }}: {{ value }}</li>
-        </ul>
-
-        <ul>
-            <li v-for="n in 5">Item {{ n }}</li>
-        </ul>
+        <my-component></my-component>
     </div>
 
     <script>
-        var app = new Vue({
+        new Vue({
             el: '#app',
-            data: {
-                items: ['Item 1', 'Item 2', 'Item 3'],
-                user: {
-                    name: 'John Doe',
-                    age: 30,
-                    occupation: 'Developer'
-                }
-            }
+            components: {
+                'my-component': {
+                    template: `
+                        <div>
+                            <h1>{{ title }}</h1>
+                            <p>{{ content }}</p>
+                        </div>
+                    `,
+                    data() {
+                        return {
+                            title: 'My Component',
+                            content: 'This is a simple Vue.js component.',
+                        };
+                    },
+                },
+            },
         });
     </script>
 </body>
 </html>
 ```
+
 ![step15](https://github.com/jgongala/InternetTechnologies/assets/65823190/ceb26da0-fbc1-4ae6-9be8-6b04b34b41c9)
 
 **Rendering Lists in Vue.js:**
