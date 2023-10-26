@@ -4,7 +4,8 @@ React is one of many frameworks which could be used for web app development, her
 
 Most of the information here is drawn from the [Svelte Website](https://svelte.dev/) and if this taster is appealing you should follow up by going through the full tutorial sequence on that site.
 
-![Slide1](/images/Slide1.png)
+![Slide1](https://github.com/jgongala/InternetTechnologies/assets/65823190/7726bb11-11cc-4dc1-9821-ca4750d7f22d)
+
 Presentation front page with presenter names and appropriate theme.
 
 ![Slide2](images/Slide2.png)
