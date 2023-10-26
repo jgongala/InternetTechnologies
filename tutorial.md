@@ -494,7 +494,7 @@ Vue.js allows you to create reusable components. Here's a basic example of creat
 </html>
 ```
 
-![step17](https://github.com/jgongala/InternetTechnologies/assets/65823190/69d64828-c1f0-43a2-a4c2-7511c3750b95)
+
 
 **HTML Structure**
 Within the `<body>`, you'll find a `<div>` element with the id of "app." This element serves as the mounting point for our Vue instance, where we'll render our Vue component.
