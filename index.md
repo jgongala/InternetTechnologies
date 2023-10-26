@@ -1,4 +1,5 @@
-## VUE.JS Deployment on AWS                ## [Open Tutorial](tutorial.md)
+## VUE.JS Deployment on AWS                
+## [Open Tutorial](tutorial.md)
 
 ![Slide1](https://github.com/jgongala/InternetTechnologies/assets/65823190/b436ad15-ed84-4168-8c76-cd349f4ddc0c)
 
