@@ -13,7 +13,7 @@ Vue CLI is a tool for scaffolding Vue.js projects. Install it globally on your s
 
 ![step1](https://github.com/jgongala/InternetTechnologies/assets/65823190/b0f7ff4d-c1ad-4866-90e6-fec97d8df58a)
 
-```bash
+```
 npm install -g @vue/cli
 ```
 
@@ -25,7 +25,7 @@ Once Vue CLI is installed, navigate to the directory where you want to create yo
 ![step2](https://github.com/jgongala/InternetTechnologies/assets/65823190/b7c73b9f-c72b-4cbc-9190-20ee1250830d)
 
 
-```bash
+```
 vue create weather-app
 ```
 
@@ -48,7 +48,7 @@ To view your Vue.js app, start the development server. Navigate to the project d
 
 ![step3](https://github.com/jgongala/InternetTechnologies/assets/65823190/1d9abfe1-aa84-4f1e-84db-0b0910ea11af)
 
-```bash
+```
 cd weather-app
 npm run serve
 ```
@@ -84,7 +84,7 @@ That's it! You've successfully set up a Vue.js project and are ready to start bu
 
 To create a Vue.js instance in an HTML file, you first need to include the Vue.js library in your HTML document. You can do this by adding the following code within the `<head>` section of your HTML file:
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -143,7 +143,7 @@ https://github.com/jgongala/InternetTechnologies/assets/65823190/346e3b97-bdc6-4
 
 Vue.js allows you to interpolate data into your template using double curly braces `{{ }}`. This is one of the most common ways to display dynamic data in your HTML.
 
-```html
+```
 <div id="app">
     {{ message }}
 </div>
@@ -209,13 +209,14 @@ The `v-on` directive in Vue.js is used to listen to events and execute methods w
 <div id="app">
     <button v-on:click="doSomething">Click me</button>    
 </div>
+```
 
 In this code snippet, we have a Vue.js application. Let's break it down:
 
 - We start with a `<div>` element with the `id` of "app." This `id` serves as the mounting point for our Vue.js instance.
 - Inside the container, there is a `<button>` element. This button is enhanced with the `v-on:click` directive. This directive is used to set up an event listener for a click event on the button.
 
-```html
+```
 <script>
     new Vue({
         el: '#app', 
@@ -298,7 +299,7 @@ This is a fundamental example of how Vue.js allows you to define methods and han
 
 1.	v-if, v-else-if, v-else: You can use these directives for conditional rendering
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -310,13 +311,10 @@ This is a fundamental example of how Vue.js allows you to define methods and han
 <body>
     <div id="app">
         <p v-if="isUserLoggedIn">Welcome, user!</p>
-
         <p v-if="isUserAdmin">You are an admin.</p>
         <p v-else-if="isUserModerator">You are a moderator.</p>
-        
         <p v-else>Please log in.</p>
     </div>
-
     <script>
         var app = new Vue({
             el: '#app',
@@ -370,7 +368,6 @@ This example serves as a practical demonstration of Vue.js's capabilities in han
     <div id="app">
         <my-component></my-component>
     </div>
-
     <script>
         new Vue({
             el: '#app',
@@ -461,7 +458,6 @@ Vue.js allows you to create reusable components. Here's a basic example of creat
     <div id="app">
         <my-component></my-component>
     </div>
-
     <script>
         // Define and mount the Vue instance
         new Vue({
