@@ -155,9 +155,6 @@ Interpolation is a simple and effective way to display dynamic data in your Vue.
 
 *v-bind Directive*
 
-![ezgif com-video-to-gif (1)](https://github.com/jgongala/InternetTechnologies/assets/65823190/32aeca0d-cc74-44ab-8f3b-9ba3efa8d78d)
-
-
 To bind HTML attributes to data, you can use the `v-bind` directive. For example:
 
 ```
@@ -203,6 +200,8 @@ As a result, when this HTML file is loaded in a browser:
 This example demonstrates the power of data binding in Vue.js for creating dynamic web applications. It allows you to effortlessly manage and update content on your webpage based on changes in your data properties, providing a foundation for building interactive and responsive web applications.
 
 **v-on Directive**
+
+![ezgif com-video-to-gif (1)](https://github.com/jgongala/InternetTechnologies/assets/65823190/32aeca0d-cc74-44ab-8f3b-9ba3efa8d78d)
 
 The `v-on` directive in Vue.js is used to listen to events and execute methods when those events occur. It allows you to create interactive and responsive user interfaces by defining event listeners and specifying what should happen when those events are triggered. For example
 
