@@ -482,3 +482,6 @@ To use the "my-component" within your application, you can simply include `<my-c
 The component's template section utilizes data binding to display the values of the title and content properties defined in the data section of the component. This enables dynamic content updates based on the component's data.
 
 This example demonstrates a basic setup for creating and using a Vue.js component directly within an HTML file. You can expand on this foundation to build more complex Vue.js applications with reusable components.
+
+## [Presentation](index.md)
+
