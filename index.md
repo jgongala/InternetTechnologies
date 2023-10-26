@@ -464,15 +464,13 @@ Now Test your Web App through a web browser to ensure it is functioning correctl
 
 ## Vue.JS Tutorial
 
-## Vue.js Project Setup
-
-## Prerequisites
+**Vue.js Project Setup**
 
 Before you begin, make sure you have the following prerequisites installed on your computer:
 
 - [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) (Node Package Manager).
 
-## Step 1: Install Vue CLI (Command Line Interface)
+**Step 1: Install Vue CLI (Command Line Interface)**
 
 Vue CLI is a tool for scaffolding Vue.js projects. Install it globally on your system using npm:
 
@@ -483,7 +481,7 @@ npm install -g @vue/cli
 ```
 
 
-## Step 2: Create a New Vue Project
+**Step 2: Create a New Vue Project**
 
 Once Vue CLI is installed, navigate to the directory where you want to create your project and run the following command:
 
@@ -494,7 +492,7 @@ Once Vue CLI is installed, navigate to the directory where you want to create yo
 vue create weather-app
 ```
 
-## Step 3: Project Structure
+**Step 3: Project Structure**
 
 After creating the project, you'll see the following project structure:
 
@@ -507,7 +505,7 @@ After creating the project, you'll see the following project structure:
 
 This project structure provides a solid foundation for organizing your Vue.js application and its related files.
 
-## Step 4: Start the Development Server
+**Step 4: Start the Development Server**
 
 To view your Vue.js app, start the development server. Navigate to the project directory and run the following commands:
 
@@ -520,7 +518,7 @@ npm run serve
 
 This command will start the development server, and you will see a [URL](http://localhost:8080) where you can access your app.
 
-### Step 5: Edit Your Vue App
+**Step 5: Edit Your Vue App**
 
 Open the project in your code editor of choice. The main Vue component can be found in the `src` directory, typically in a file named `App.vue`. You can start editing this file and add your Vue components in the `components` directory.
 
@@ -531,7 +529,7 @@ Feel free to make changes, create new components, and design your Vue.js app to 
 
 Once you've made your modifications, you can see the changes by reloading the development server.
 
-### Step 6: Build for Production
+**Step 6: Build for Production**
 
 When you're ready to deploy your Vue app, you can create a production build by running the following command:
 
@@ -545,7 +543,7 @@ That's it! You've successfully set up a Vue.js project and are ready to start bu
 
 ## Getting Started with your code
 
-## Step 1: Include the Vue.js Library
+**Include the Vue.js Library**
 
 To create a Vue.js instance in an HTML file, you first need to include the Vue.js library in your HTML document. You can do this by adding the following code within the `<head>` section of your HTML file:
 
@@ -565,11 +563,12 @@ To create a Vue.js instance in an HTML file, you first need to include the Vue.j
 
 ```
 
-## Step 2: Create Your Vue Instance
+**Step 2: Create Your Vue Instance**
 
 Now, you can define your Vue instance within a `<script>` tag at the end of your HTML file, just before the closing `</body>` tag. Here's an example of creating a simple Vue instance!
 
-[step6](https://github.com/jgongala/InternetTechnologies/assets/65823190/fd88edc4-b1c2-4650-8b4b-545e4c2d0ebf)
+![step6](https://github.com/jgongala/InternetTechnologies/assets/65823190/9cf92618-474a-4695-880c-e2d0e5fc3ba1)
+
 
 ```
 <body>
@@ -591,7 +590,7 @@ Now, you can define your Vue instance within a `<script>` tag at the end of your
 
 In this example, we create a Vue instance with the `new Vue()` constructor. We specify the `el` property to define the HTML element with the id "app" as the mounting point for our Vue instance. The `data` property contains the data that Vue.js will manage, in this case, a `message` property with the value "Hello, Vue!"
 
-## Step 3: Interact with Vue Data
+**Step 3: Interact with Vue Data**
 
 You can now access the data defined in your Vue instance within your HTML by using double curly braces `{{ }}`. In this example, we're displaying the value of the `message` property within the `#app` element.
 
@@ -601,7 +600,7 @@ That's it! You've created a basic Vue instance in an HTML file. You can build up
 
 ## Basic Vue.js Directives: 
 
-1. Interpolation
+**Interpolation**
 
 https://github.com/jgongala/InternetTechnologies/assets/65823190/346e3b97-bdc6-491f-af41-111f305b7cb8
 
@@ -613,11 +612,11 @@ Vue.js allows you to interpolate data into your template using double curly brac
 </div>
 ```
 
-In this example, `{{ message }}` will be replaced with the value of the `message` property from your Vue instance. If `message` is "Hello, Vue!", the rendered HTML will be "Hello, Vue!".
+In this example,  `message` will be replaced with the value of the `message` property from your Vue instance. If `message` is "Hello, Vue!", the rendered HTML will be "Hello, Vue!".
 
 Interpolation is a simple and effective way to display dynamic data in your Vue.js application.
 
-2. v-bind Directive:
+*v-bind Directive*
 
 https://github.com/jgongala/InternetTechnologies/assets/65823190/1e1f4e94-fe8a-4d88-830f-384fbe887ea4
 
@@ -665,7 +664,7 @@ As a result, when this HTML file is loaded in a browser:
 
 This example demonstrates the power of data binding in Vue.js for creating dynamic web applications. It allows you to effortlessly manage and update content on your webpage based on changes in your data properties, providing a foundation for building interactive and responsive web applications.
 
-3. v-on Directive:
+**v-on Directive**
 
 The `v-on` directive in Vue.js is used to listen to events and execute methods when those events occur. It allows you to create interactive and responsive user interfaces by defining event listeners and specifying what should happen when those events are triggered. For example
 
