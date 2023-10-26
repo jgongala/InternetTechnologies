@@ -80,7 +80,7 @@ That's it! You've successfully set up a Vue.js project and are ready to start bu
 
 ## Getting Started with your code
 
-**Include the Vue.js Library**
+**Step 1: Include the Vue.js Library**
 
 To create a Vue.js instance in an HTML file, you first need to include the Vue.js library in your HTML document. You can do this by adding the following code within the `<head>` section of your HTML file:
 
