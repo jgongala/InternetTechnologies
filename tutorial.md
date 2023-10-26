@@ -139,7 +139,7 @@ That's it! You've created a basic Vue instance in an HTML file. You can build up
 
 **Interpolation**
 
-https://github.com/jgongala/InternetTechnologies/assets/65823190/346e3b97-bdc6-491f-af41-111f305b7cb8
+![ezgif com-video-to-gif](https://github.com/jgongala/InternetTechnologies/assets/65823190/5c830cb5-c159-472e-a5e1-299b01025242)
 
 Vue.js allows you to interpolate data into your template using double curly braces `{{ }}`. This is one of the most common ways to display dynamic data in your HTML.
 
