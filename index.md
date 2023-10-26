@@ -128,11 +128,22 @@ Text in the <p> element is bound to the ‘message’ property
 
 <body> contains content.
 
+**Vue.js Setup:**
 
+<div id="app"> as Vue container.
 
-Whilst React would try to interpret `<strong/>` as JSX, svelte does not interpret this by default so the result of line 5 is to print the text literally.
+<p>{{ message }}</p> for data binding.
 
-The inclusion on line 6 of @html causes the html to be interpreted and produce bold text.
+<input v-model="message"> for two-way binding**.**
+
+**JavaScript initializes Vue:**
+
+new Vue({}) It creates a new Vue instance.
+
+el: '#app' : specifies that the Vue instance will control the element with the id "app."
+
+data: { message: 'Hello, Vue.js!’ } defines initial data for data binding.
+    
 
 ![Slide9](images/Slide9.png)
 This script provides a counter defined outside a function which increments it.   No need to use hooks at this point.
