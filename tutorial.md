@@ -354,8 +354,6 @@ In this code example, we demonstrate how to implement conditional rendering in V
 
 - In the data section of the Vue instance, we define three boolean properties: `isUserLoggedIn`, `isUserAdmin`, and `isUserModerator`. These properties represent example conditions. In a real application, these conditions could be dynamically set based on user roles or authentication status.
 
-**Tutorial Purpose:**
-
 This example serves as a practical demonstration of Vue.js's capabilities in handling conditional rendering. By using `v-if`, `v-else-if`, and `v-else`, you can dynamically adjust the content displayed to users based on different conditions. This is a powerful feature for building interactive and personalized user interfaces.
 
 2. v-for: Use this directive for rendering lists of data.
@@ -495,6 +493,8 @@ Vue.js allows you to create reusable components. Here's a basic example of creat
 </body>
 </html>
 ```
+
+
 ![step17](https://github.com/jgongala/InternetTechnologies/assets/65823190/69d64828-c1f0-43a2-a4c2-7511c3750b95)
 
 **HTML Structure**
