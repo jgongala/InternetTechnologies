@@ -104,9 +104,6 @@ To create a Vue.js instance in an HTML file, you first need to include the Vue.j
 
 Now, you can define your Vue instance within a `<script>` tag at the end of your HTML file, just before the closing `</body>` tag. Here's an example of creating a simple Vue instance!
 
-![step6](https://github.com/jgongala/InternetTechnologies/assets/65823190/9cf92618-474a-4695-880c-e2d0e5fc3ba1)
-
-
 ```
 <body>
     <div id="app">
@@ -124,6 +121,9 @@ Now, you can define your Vue instance within a `<script>` tag at the end of your
     </script>
 </body>
 ```
+
+![step6](https://github.com/jgongala/InternetTechnologies/assets/65823190/9cf92618-474a-4695-880c-e2d0e5fc3ba1)
+
 
 In this example, we create a Vue instance with the `new Vue()` constructor. We specify the `el` property to define the HTML element with the id "app" as the mounting point for our Vue instance. The `data` property contains the data that Vue.js will manage, in this case, a `message` property with the value "Hello, Vue!"
 
@@ -155,7 +155,8 @@ Interpolation is a simple and effective way to display dynamic data in your Vue.
 
 *v-bind Directive*
 
-https://github.com/jgongala/InternetTechnologies/assets/65823190/1e1f4e94-fe8a-4d88-830f-384fbe887ea4
+https://github.com/jgongala/InternetTechnologies/assets/65823190/49aeec93-d2e4-4126-b63a-255dcdf787ec
+
 
 To bind HTML attributes to data, you can use the `v-bind` directive. For example:
 
