@@ -45,21 +45,21 @@ source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.m
 
 ## Purpose
 
--Make web application development more manageable and efficient.
--Provides a progressive framework.
--Incremental Adoption which can be incrementally adopted into projects of all sizes.
--Versatility: Suitable for both simple Single-Page Applications (SPAs) and complex enterprise-level systems.
--Empowerment: Empowers developers to craft user interfaces with ease.
+- Make web application development more manageable and efficient.
+- Provides a progressive framework.
+- Incremental Adoption which can be incrementally adopted into projects of all sizes.
+- Versatility: Suitable for both simple Single-Page Applications (SPAs) and complex enterprise-level systems.
+- Empowerment: Empowers developers to craft user interfaces with ease.
 
 ![Slide6](https://github.com/jgongala/InternetTechnologies/assets/65823190/2008a7e4-6752-4dcb-8aab-6e97c43911d8)
 
 ## Who Uses It
 
--Diverse Adoption: It is trusted by a diverse range of organizations and developers worldwide like these companies like Alibaba, Xiaomi, and Adobe, among others, have adopted Vue.js for their web projects.
--Accessible to All: Its approachable learning curve accommodates developers of all skill levels, from startups to established tech giants.
--In Summary: Vue.js is known for its simplicity, flexibility, and broad user base, empowering efficient development of dynamic and interactive web applications.
--All that make Vue.js A Trusted Framework Worldwide
--Here are some examples of companies that use Vue.js in their projects
+- Diverse Adoption: It is trusted by a diverse range of organizations and developers worldwide like these companies like Alibaba, Xiaomi, and Adobe, among others, have adopted Vue.js for their web projects.
+- Accessible to All: Its approachable learning curve accommodates developers of all skill levels, from startups to established tech giants.
+- In Summary: Vue.js is known for its simplicity, flexibility, and broad user base, empowering efficient development of dynamic and interactive web applications.
+- All that make Vue.js A Trusted Framework Worldwide
+- Here are some examples of companies that use Vue.js in their projects
 
 ![Slide7](https://github.com/jgongala/InternetTechnologies/assets/65823190/959c86e7-ee41-46e3-b8ba-25b064f33e47)
 
@@ -73,8 +73,8 @@ source: [monterai](https://www.monterail.com/blog/vue-vs-react)[ ](https://www.m
 
 Text in the <p> element is bound to the ‘message’ property
 
--When you type in the input field
--The text in the <p> element updates in real-time, as depicted in the images below:
+- When you type in the input field
+- The text in the <p> element updates in real-time, as depicted in the images below:
 ```
 <!DOCTYPE html>
 <html>
@@ -129,8 +129,8 @@ Text in the <p> element is bound to the ‘message’ property
 ## Simple Examples - Event Handling
 
 **Showcase Vue.js Event handling**
--Clicking on the "Click me" button to triggers the “sayHello” method
--updates the greeting property to display a message
+- Clicking on the "Click me" button to triggers the “sayHello” method
+- updates the greeting property to display a message
 As depicted in the code below:
 ```
 <!DOCTYPE html>
@@ -212,19 +212,89 @@ Vue.js is designed to be highly compatible and easily integrated with other tech
 - Components encapsulate HTML, CSS, and JavaScript.
 - Organizes and modularizes code for complex UIs.
 
+![Slide13](https://github.com/jgongala/InternetTechnologies/assets/65823190/be4b457d-b9be-454f-be17-ff91d783e362)
+
+## CSS and JavaScript Integration
+**CSS**
+**Scoped CSS:**
+
+- Vue.js allows component-specific styles, preventing conflicts.
+- Clean Structure: Ensures encapsulated and conflict-free styling.
+
+**CSS Preprocessors:**
+
+- Vue.js supports integration with CSS preprocessors for enhanced styling.
+
+**JavaScript Libraries:**
+**Vue Router:**
+
+- Popular for routing in SPAs (single-page applications)
+- Offers client-side routing with Vue.js
+- Enables navigation between views, ensuring smooth user experience
+
+**Vuex:**
+
+- State management for large applications.
+- Centralizes and manages application state and integrates seamlessly with Vue components.
+
+# Third-Party Libraries:
+**Compatibility & Integration:**
+
+- Vue.js works well with various JavaScript libraries and plugins, simplifying the integration of third-party tools.
+
+**RESTful APIs and Backend Technologies:**
+
+- Though Vue.js is front-end-centric, it efficiently interacts with RESTful APIs and backend technologies for data handling.
+
+![Slide14](https://github.com/jgongala/InternetTechnologies/assets/65823190/415c2c9f-3760-4c47-b6a5-1415704caa84)
+
+## Vue.js in a System
+Vue.js plays a crucial role in the front-end of a web application and seamlessly integrates into larger systems. Let's explore how Vue.js fits into the architecture of a web application:
+
+**Front-End Framework:**
+
+- Vue.js is integral to the front-end, seamlessly fitting into larger systems and focusing on the UI layer of web applications.
+
+**Component-Based Architecture:**
+
+- Vue.js supports a modular, component-based structure, streamlining development with reusable elements.
+
+**Interactivity and Responsiveness:**
+
+- Vue.js enables the creation of highly interactive and responsive applicationsvia two-way data binding, improving real-time user experience.
+
+![Slide15](https://github.com/jgongala/InternetTechnologies/assets/65823190/0ee9e217-4985-4ee4-a068-6faa06f1798d)
+
+## Summary
+
+Vue.js is a robust front-end framework for building engaging and dynamic user interfaces.
+
+It offers seamless integration with various backend technologies and a wide range of tools, suitable for applications of all sizes.
+
+Vue.js ensures a responsive, interactive, and easily maintainable user experience.
+
+![Slide16](https://github.com/jgongala/InternetTechnologies/assets/65823190/aa649e2c-f7f7-47c8-9e96-2d6ad76b2437)
+
+## USE CASE SCENARIOS
+
+*Chat Applications*
+
+WhatsApp Web
+
+- WhatsApp Web, the web version of the popular messaging app, utilizes Vue.js to provide a smooth and responsive chat experience. Vue.js enables real-time updates of messages and chat conversations, making it easy for users to stay connected.
+
+Facebook Messenger
+
+- Facebook Messenger's web version employs Vue.js to deliver real-time messaging capabilities. Vue's reactivity ensures that messages are instantly displayed, and new messages are received without the need for manual refreshes.
+
+Slack
+
+- Slack, a widely used team collaboration platform, incorporates Vue.js for its chat functionality. Vue.js helps create dynamic channels and threads while maintaining an organized and responsive chat experience.
+
+- Vue.js enables the development of real-time chat applications that are interactive, responsive, and user-friendly. Vue's reactivity and component-based structure are instrumental in creating dynamic chat interfaces, allowing users to communicate seamlessly across different devices and browsers.
 
 
-The last basic example reviewed here is the array example.  The svelte syntax does not introduce much new, but this is a good reminder of some javascript syntax.
 
-... spreads the array elements out and then another element is added.  This makes numbers in line 5 change when the addNumber function is called.
-Some syntax variations which might look ok would not cause a change in a manner which would trigger a change in display through the reactive variable 'sum'.
-
-A reducer is a function which acts on an array to evaluate a single numerical result, in this case the sum of array elements.
-
-A join produces a string representation of the array whith a selected delimiter.
-
-![Slide12](images/Slide12.png)
-To learn more you should continue to work through the svelte tutorial examples yourself, but for now jump forward to get an introduction to the SvelteKit syntax.
 
 ### SvelteKit
 
