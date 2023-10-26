@@ -155,7 +155,7 @@ Interpolation is a simple and effective way to display dynamic data in your Vue.
 
 *v-bind Directive*
 
-https://github.com/jgongala/InternetTechnologies/assets/65823190/49aeec93-d2e4-4126-b63a-255dcdf787ec
+![ezgif com-video-to-gif (1)](https://github.com/jgongala/InternetTechnologies/assets/65823190/32aeca0d-cc74-44ab-8f3b-9ba3efa8d78d)
 
 
 To bind HTML attributes to data, you can use the `v-bind` directive. For example:
