@@ -123,22 +123,18 @@ Text in the <p> element is bound to the ‘message’ property
 - `<script>`: Links to the Vue.js library using a CDN (Content Delivery Network).
 - `<body>`: Contains the main content.
 
-# Vue.js Setup
+**Vue.js Setup:**
 
 - `<div id="app">`: Serves as the Vue container.
 - `<p>{{ message }}</p>`: Demonstrates data binding.
 - `<input v-model="message">`: Illustrates two-way binding.
 
-# JavaScript Vue.js Initialization
+**JavaScript Vue.js Initialization**
 
-```
-new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello, Vue.js!'
-  }
-});
-```
+- new Vue({}) It creates a new Vue instance.
+- el: '#app' : specifies that the Vue instance will control the element with the id "app."
+- data: { message: 'Hello, Vue.js!’ } defines initial data for data binding.
+
 
 ![Slide10](https://github.com/jgongala/InternetTechnologies/assets/65823190/f333a957-7767-45b6-a7c7-15049589d59e)
 
@@ -189,34 +185,23 @@ As depicted in the code below:
 
 **HTML:**
 
-- `<!DOCTYPE html>`: Defines the document type.
-  
-- `<html>`: Begins the HTML document.
-  
+- `<!DOCTYPE html>`: Defines the document type.  
+- `<html>`: Begins the HTML document. 
 - `<head>`: Contains meta-information and linked scripts/stylesheets.
-  
 - `<title>`: Specifies the page title.
-  
 - `<script>`: Links to the Vue.js library using a CDN (Content Delivery Network).
-  
 - `<body>`: Contains the main content.
 
 **Vue.js Setup:**
-
 - `<div id="app">`: Serves as the Vue container.
-
 - `<p>{{ greeting }}</p>`: Demonstrates data binding.
-
 - `<button v-on:click="sayHello">`: Specifies that the `sayHello` method should be called when the button is clicked.
 
 **JavaScript initializes Vue:**
 
 - `new Vue({})`: Creates a new Vue instance.
-
 - `el: '#app'`: Specifies that the Vue instance will control the element with the ID "app."
-
 - `data: { greeting: '' }`: The data option defines the initial data for the Vue instance, setting the `greeting` property to an empty string.
-
 - `methods: { sayHello: function() { ... } }`: Defines custom methods that can be called from the Vue instance. In this case, it sets the `greeting` property to 'Hello, Vue.js!' when the button is clicked.
 
 ![Slide12](https://github.com/jgongala/InternetTechnologies/assets/65823190/2b89a93a-de8c-45f2-a56c-203cab9a5419)
@@ -228,23 +213,18 @@ Vue.js is designed to be highly compatible and easily integrated with other tech
 **HTML Integration:**
 **Templates:**
 -Vue.js employs HTML-based templates for UI design.
-
 -Ease of use: templates resemble standard HTML.
-
 -Dynamic & responsive UIs through data and directive binding.
 
 **Custom HTML Attributes:**
 
 -Vue.js enhances HTML with custom attributes called directives.
-
 -Directives like v-bind and v-on add specific behaviors to elements.
 
 **Component-Based Structure:**
 
 -Vue.js advocates component-based architecture.
-
 -Components encapsulate HTML, CSS, and JavaScript.
-
 -Organizes and modularizes code for complex UIs.
 
 
