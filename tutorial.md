@@ -1,14 +1,5 @@
 
 ## Vue.JS Tutorial
-### Contents
-1. [Project Setup](#Vue.js Project Setup)
-2.  [Getting Started with your code](#Getting Started with your code)
-3.  [Create an EC2 Instance](#3-create-an-ec2-instance)
-4.  [Connect to Your Instance](#4-connect-to-your-instance)
-5.  [Set Up a Web Server using Apache](#5-set-up-a-web-server-using-apache)
-6.  [Dynamic Domain Name Service](#6-dynamic-domain-name-service-ddns)
-7.  [Installing HTTPS](#7-installing-https)
-8.  [Connecting to Your VM via SSH on Visual Studio Code](#8-connecting-to-your-vm-via-ssh-on-visual-studio-code-vsc)
 
 ## Vue.js Project Setup
 
