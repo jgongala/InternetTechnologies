@@ -415,21 +415,39 @@ Vue CLI is a tool for scaffolding Vue.js projects. Install it globally on your s
 
 ![step1](https://github.com/jgongala/InternetTechnologies/assets/65823190/b0f7ff4d-c1ad-4866-90e6-fec97d8df58a)
 
-```
-npm install -g @vue/cli
-```
-
-
 **Step 2: Create a New Vue Project**
 
-Once Vue CLI is installed, navigate to the directory where you want to create your project and run the following command:
+Once Vue CLI is installed, open your Visual Studio Code and open the directory directory where you want to create your project and run the following command:
 
-![step2](https://github.com/jgongala/InternetTechnologies/assets/65823190/b7c73b9f-c72b-4cbc-9190-20ee1250830d)
+![app1](https://github.com/jgongala/InternetTechnologies/assets/65823190/20dd59e3-9b36-49e6-8a57-3946f61bd987)
 
+You're probably thinking what vite is. Vite is really powerful engine which will run our app.
 
-```
-vue create weather-app
-```
+![app2](https://github.com/jgongala/InternetTechnologies/assets/65823190/71d32998-0049-4e7d-bfec-7529643a47db)
+
+Once installed and our project is created we will choose our framework which is vue.js
+
+![app3](https://github.com/jgongala/InternetTechnologies/assets/65823190/3d19adfc-e1ee-45cf-afc6-377e5ce5bf04)
+
+We will also select JavaScrip.
+
+Now we will have to run npm install to install node packages.
+
+![app4](https://github.com/jgongala/InternetTechnologies/assets/65823190/c119b19a-1bd4-416d-adfe-8ccc9d8a3515)
+![app5](https://github.com/jgongala/InternetTechnologies/assets/65823190/8d268090-ec8f-4b91-9b52-fa3e97302ca7)
+
+Now everything is successfully installed and we can go to our local host:
+
+![app6](https://github.com/jgongala/InternetTechnologies/assets/65823190/de265434-6b0a-46cf-9b1e-a89b8bd79102)
+
+And you should see below page:
+
+![app7](https://github.com/jgongala/InternetTechnologies/assets/65823190/7ab8aed7-036b-45cc-9487-aee1ecc82549)
+
+*Cool tip*
+
+We recommend to install extension Vue Language Features (Volar)
+![app8](https://github.com/jgongala/InternetTechnologies/assets/65823190/55dbe6d2-2511-4f72-aad5-2df5797fd3be)
 
 **Step 3: Project Structure**
 
@@ -444,39 +462,50 @@ After creating the project, you'll see the following project structure:
 
 This project structure provides a solid foundation for organizing your Vue.js application and its related files.
 
-**Step 4: Start the Development Server**
+![app9](https://github.com/jgongala/InternetTechnologies/assets/65823190/db073a4b-541a-4bee-9884-8625b9a0cb37)
 
-To view your Vue.js app, start the development server. Navigate to the project directory and run the following commands:
+## Create Quiz App with us
 
-![step3](https://github.com/jgongala/InternetTechnologies/assets/65823190/1d9abfe1-aa84-4f1e-84db-0b0910ea11af)
+**Remove not needed components**
 
+![app10](https://github.com/jgongala/InternetTechnologies/assets/65823190/b625a3f0-6d29-44d5-9823-93eebb47a4ee)
+
+If you are confused, and thinking why we are deleting this folder, it is a simple answer, we won't need it for this tutorial.
+
+**App.vue file**
+
+Make sure that your App.vue file looks like this:
+
+![app11](https://github.com/jgongala/InternetTechnologies/assets/65823190/ededa4a6-3c85-4f18-aec6-5be998d2b189)
+
+We will start our project from scratch.
+
+**Does it work?**
+
+To check if our project is communicating with our local host, we will edit some styling and add temporary h1.
 ```
-cd weather-app
-npm run serve
+<template>
+    <h1>Hello students! Hope you will enjoy our tutorial!</h1>
+</template>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrata', sans-serif;
+  }
+
+  body {
+    background-color: #EDC7B7;
+    color: #123c69;
+  }
 ```
 
-This command will start the development server, and you will see a [URL](http://localhost:8080) where you can access your app.
+Once that done, go to your browser and refresh local host. Congrats if you see page below:
 
-**Step 5: Edit Your Vue App**
+![app12](https://github.com/jgongala/InternetTechnologies/assets/65823190/ee0ba42a-9d25-4785-98c4-a02cf20965c1)
 
-Open the project in your code editor of choice. The main Vue component can be found in the `src` directory, typically in a file named `App.vue`. You can start editing this file and add your Vue components in the `components` directory.
 
-- **App.vue:** This is the main Vue component that serves as the entry point for your application. You can customize the content and structure of your app in this file.
-- **components:** This directory is where you can create and organize your Vue components. Vue components are reusable pieces of your application that encapsulate HTML, CSS, and JavaScript.
-
-Feel free to make changes, create new components, and design your Vue.js app to meet your project requirements.
-
-Once you've made your modifications, you can see the changes by reloading the development server.
-
-**Step 6: Build for Production**
-
-When you're ready to deploy your Vue app, you can create a production build by running the following command:
-
-```bash
-npm run build
-```
-
-This command will generate optimized, minified, and bundled files in the `dist` directory, which you can deploy to a web server.
 
 That's it! You've successfully set up a Vue.js project and are ready to start building your web application. For more details and advanced configuration options, you can refer to the official [Vue.js documentation](https://vuejs.org/) and [Vue CLI documentation](https://cli.vuejs.org/).
 
