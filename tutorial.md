@@ -421,15 +421,15 @@ Once Vue CLI is installed, open your Visual Studio Code and open the directory d
 
 ![app1](https://github.com/jgongala/InternetTechnologies/assets/65823190/20dd59e3-9b36-49e6-8a57-3946f61bd987)
 
-You're probably thinking what vite is. Vite is really powerful engine which will run our app.
-
-![app2](https://github.com/jgongala/InternetTechnologies/assets/65823190/71d32998-0049-4e7d-bfec-7529643a47db)
+You're probably thinking what *vite* is? *Vite* is really powerful engine which will run our app.
 
 Once installed and our project is created we will choose our framework which is vue.js
 
-![app3](https://github.com/jgongala/InternetTechnologies/assets/65823190/3d19adfc-e1ee-45cf-afc6-377e5ce5bf04)
+![app2](https://github.com/jgongala/InternetTechnologies/assets/65823190/71d32998-0049-4e7d-bfec-7529643a47db)
 
 We will also select JavaScrip.
+
+![app3](https://github.com/jgongala/InternetTechnologies/assets/65823190/3d19adfc-e1ee-45cf-afc6-377e5ce5bf04)
 
 Now we will have to run npm install to install node packages.
 
@@ -478,7 +478,7 @@ Make sure that your App.vue file looks like this:
 
 ![app11](https://github.com/jgongala/InternetTechnologies/assets/65823190/ededa4a6-3c85-4f18-aec6-5be998d2b189)
 
-We will start our project from scratch.
+As we will start our project from scratch.
 
 **Does it work?**
 
@@ -505,6 +505,191 @@ Once that done, go to your browser and refresh local host. Congrats if you see p
 
 ![app12](https://github.com/jgongala/InternetTechnologies/assets/65823190/ee0ba42a-9d25-4785-98c4-a02cf20965c1)
 
+**Coding Questions for our Quiz** 
+
+We will start our coding from creating question library. First thing that we are going to do is to import some packages.
+
+```
+import { ref, computed } from 'vue'
+```
+
+We're importing the ref and computed functions from the Vue.js library. These functions are used to create and manage reactive data in a Vue.js application.
+
+Next we will have to define a questions variable as a *ref*. This means questions is a reactive reference to an array of objects.
+
+```
+const questions = ref([
+    {
+      question: 'What is Vue.js?',
+      answer: 0,
+      options: [
+        'A front-end framework',
+        'A library',
+        'A back-end framework'
+      ],
+      selected: null
+    },
+    {
+      question: 'How to use for loop in Vue.js?',
+      answer: 2,
+      options: [
+        'vFor',
+        '*v-for',
+        'v-for'
+      ],
+      selected: null
+    },
+    {
+      question: 'What keyword is used for generating a constant in Vue.js?',
+      answer: 1,
+      options: [
+        'Define',
+        'Const',
+        'None of the above.'
+      ],
+      selected: null
+    }
+  ])
+```
+
+Next, let's break down the structure of the questions array of objects:
+- Each object in the array represents a single question.
+- Each question object has the following properties:
+*question*: A string that represents the question itself.
+*answer*: An index that specifies the correct answer in the options array.
+*options*: An array of strings representing multiple choice options.
+*selected*: Initially set to null, this property can be used to store the user's selected answer.
+
+The code we've provided sets up the initial data structure for our quiz application. We can use Vue.js to create components and templates that interact with this data to build a complete interactive quiz.
+
+**Variable**
+
+As in every program we will have to define some variables: 
+
+```
+const quizCompleted = ref(false)
+```
+
+*quizCompleted* is a reactive reference created with ref. It is used to track whether the quiz has been completed or not. When quizCompleted is *false*, it means the quiz is not yet completed. This variable can be updated throughout our application to reflect the current state of the quiz. For example, when all questions have been answered, we will set quizCompleted to true to indicate that the quiz has been successfully completed.
+
+```
+const currentQuestion = ref(0)
+```
+
+*currentQuestion* is another reactive reference created with ref. It is used to keep track of the index of the current question that the user is working on. The 0 as its initial value indicates that the user is starting with the first question.
+As the user progresses through the quiz by answering questions, we will increment the currentQuestion variable to move to the next question. For example, after the user answers the current question, we will update currentQuestion to move to the next question (e.g., increment it by 1).
+
+These variables are essential for managing the state of a quiz application. We can use them to determine whether the quiz is ongoing or completed and to control the display of questions to the user by tracking the current question's index. They enable you to create a user-friendly and interactive quiz experience in your Vue.js application.
+
+**Score**
+
+```
+  const score = computed(() => {
+    let value = 0
+    questions.value.map(q => {
+      if (q.selected != null && q.answer == q.selected) {
+        console.log('correct');
+        value++
+      }
+    })
+    return value
+  })
+```
+
+*score* is a computed property created using Vue's computed function. Computed properties are used to derive a value based on other reactive properties. In this case, it calculates the user's score. Inside the computed function, a *value* variable is initialized to 0. This variable will be used to keep track of the user's score.
+
+```questions.value.map(q => { ... }) ``` is used to iterate through each *question* in the questions array that we created at the begining. It uses the *map* function to go through each question object.
+
+Inside the loop, it checks if *q.selected* is not null (i.e., the user has made a selection) and if q.answer (the correct answer) matches q.selected (the user's selection). If both conditions are met, it means the user's selection is correct.
+
+When a correct answer is found, the code increments the *value* variable by 1. This effectively counts the number of correct answers the user has given.
+
+The code also logs 'correct' to the console when a correct answer is found. This can be useful for debugging or providing feedback.
+
+After all questions have been checked, the computed property returns the final value of value, which represents the user's score in the quiz.
+
+This computed property is a useful tool for calculating and displaying the user's score in your Vue.js quiz application. It checks the user's answers against the correct answers and keeps a running tally of correct responses, providing a score at the end of the quiz.
+
+**Get/Next Question**
+
+```
+const getCurrentQuestion = computed(() => {
+	let question = questions.value[currentQuestion.value]
+	question.index = currentQuestion.value
+	return question
+})
+```
+
+*getCurrentQuestion* computed property in the context of a tutorial. This computed property is used to retrieve and provide the current question that the user should be presented with. It is designed to provide the current question that the user should answer in the quiz.
+
+Inside the computed function, *questions.value[currentQuestion.value]* is used to access the current question. *questions.value* retrieves the array of questions, and *currentQuestion.value* provides the index of the current question, so this line effectively selects the current question object.
+
+*question.index = currentQuestion.value* is used to add an index property to the question object. This index property stores the index of the current question. This can be useful for displaying the question number to the user.
+
+The computed property returns the *question* object, which represents the current question that should be displayed to the user.
+
+This computed property is valuable in a Vue.js quiz application as it simplifies the process of determining which question to display to the user based on the *currentQuestion variable*. It allows you to easily access the current question and its associated data for rendering in the user interface.
+
+```
+const nextQuestion = () => {
+	if (currentQuestion.value < questions.value.length - 1) {
+		currentQuestion.value++
+		return
+	}
+	
+	quizCompleted.value = true
+}
+```
+
+*nextQuestion* function is designed to handle moving to the next question in your Vue.js quiz application. It checks whether there are more questions to navigate to and updates the state accordingly. *nextQuestion* is a function that doesn't take any arguments. It is intended to be called when the user wants to move on to the next question in the quiz.
+
+*if (currentQuestion.value < questions.value.length - 1)* checks if there are more questions available to navigate to. It does this by comparing the index of the current question *(currentQuestion.value)* with the total number of questions *(questions.value.length)*. If there are more questions to go to, the code inside the if block is executed.
+
+Inside the if block, *currentQuestion.value++* increments the *currentQuestion* index to move to the next question in the array.
+
+If there are no more questions to navigate to (i.e., the user is at the last question), the code within the else block is executed.
+
+In this case, *quizCompleted.value* is set to *true*, indicating that the quiz has been completed. This could be used to trigger some UI changes or actions to inform the user that they've finished the quiz.
+
+This function is essential for controlling the flow of your quiz application, ensuring that the user can move through the questions and marking the quiz as completed when they've answered all the questions.
+
+**Answer**
+
+```
+const SetAnswer = (e) => {
+  questions.value[currentQuestion.value].selected = e.target.value;
+  e.target.value = null;
+}
+```
+The *SetAnswer* function appears to be responsible for recording the user's selected answer for the current question and then resetting the selection to null for the next question. *SetAnswer* is a function that takes an event (e) as its argument. This function is typically used as an event handler when a user selects an answer, such as when they click on a multiple-choice option.
+
+*questions.value[currentQuestion.value]* is used to access the current question that the user is working on. *questions.value* represents the array of questions, and *currentQuestion.value* provides the index of the current question.
+
+*questions.value[currentQuestion.value].selected = e.target.value* sets the selected property of the current question to the value of the selected answer. The *e.target.value* typically represents the value of the user's selection, which is recorded as their answer to the current question. This is how the user's answer is associated with the current question.
+
+*e.target.value = null* is used to clear the selection after it has been recorded. This ensures that when the user proceeds to the next question, there are no pre-selected answers, and they have to make a new choice.
+
+This function is an important part of your Vue.js quiz application because it manages the user's interactions with the questions. When a user selects an answer, it records their choice for the current question and then resets the selection for the next question, ensuring a clean state for each question.
+
+
+**First Front End changes - Displat question**
+
+```
+<template>
+  <main class="app">
+
+    <div class="h1">Quiz</div>
+
+    <section class="quiz">
+      <div class="quiz-info">
+
+        <span class="question">
+          {{ getCurrentQuestion.question}}  
+    </section>
+
+  </main>
+</template>
+```
 
 
 That's it! You've successfully set up a Vue.js project and are ready to start building your web application. For more details and advanced configuration options, you can refer to the official [Vue.js documentation](https://vuejs.org/) and [Vue CLI documentation](https://cli.vuejs.org/).
