@@ -1,7 +1,12 @@
 
 ## Vue.JS Tutorial
 
-## Getting Started with your code - template file
+## Contents
+1. [Getting Started with your code - template file](#Getting Started with your code - template file)
+2. [Vue.js Project Setup](#Vue.js Project Setup)
+3. [Create Quiz App with us](#Create Quiz App with us)
+
+### Getting Started with your code - template file
 
 **Step 1: Include the Vue.js Library**
 
@@ -403,7 +408,7 @@ The component's template section utilizes data binding to display the values of 
 
 This example demonstrates a basic setup for creating and using a Vue.js component directly within an HTML file. You can expand on this foundation to build more complex Vue.js applications with reusable components.
 
-## Vue.js Project Setup
+### Vue.js Project Setup
 
 Before you begin, make sure you have the following prerequisites installed on your computer:
 
@@ -464,7 +469,7 @@ This project structure provides a solid foundation for organizing your Vue.js ap
 
 ![app9](https://github.com/jgongala/InternetTechnologies/assets/65823190/db073a4b-541a-4bee-9884-8625b9a0cb37)
 
-## Create Quiz App with us
+### Create Quiz App with us
 
 **Remove not needed components**
 
