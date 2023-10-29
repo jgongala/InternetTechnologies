@@ -555,9 +555,13 @@ const questions = ref([
 Next, let's break down the structure of the questions array of objects:
 - Each object in the array represents a single question.
 - Each question object has the following properties:
+  
 *question*: A string that represents the question itself.
+
 *answer*: An index that specifies the correct answer in the options array.
+
 *options*: An array of strings representing multiple choice options.
+
 *selected*: Initially set to null, this property can be used to store the user's selected answer.
 
 The code we've provided sets up the initial data structure for our quiz application. We can use Vue.js to create components and templates that interact with this data to build a complete interactive quiz.
@@ -598,7 +602,7 @@ These variables are essential for managing the state of a quiz application. We c
 
 *score* is a computed property created using Vue's computed function. Computed properties are used to derive a value based on other reactive properties. In this case, it calculates the user's score. Inside the computed function, a *value* variable is initialized to 0. This variable will be used to keep track of the user's score.
 
-```questions.value.map(q => { ... }) ``` is used to iterate through each *question* in the questions array that we created at the begining. It uses the *map* function to go through each question object.
+*questions.value.map(q => { ... })* is used to iterate through each *question* in the questions array that we created at the begining. It uses the *map* function to go through each question object.
 
 Inside the loop, it checks if *q.selected* is not null (i.e., the user has made a selection) and if q.answer (the correct answer) matches q.selected (the user's selection). If both conditions are met, it means the user's selection is correct.
 
@@ -739,7 +743,7 @@ In this bunch of code that is a part of a Vue.js template for our quiz applicati
 
 ```
 
-*<div class="options">*: This div element wraps the options for the current question. It appears to be a container for displaying the multiple-choice options to the user.
+```<div class="options">```: This div element wraps the options for the current question. It appears to be a container for displaying the multiple-choice options to the user.
 
 *v-for="(option, index) in getCurrentQuestion.options"*: This v-for directive loops through the options array of the current question using option as the value and index as the index. It allows you to render each option.
 
@@ -759,7 +763,7 @@ Inside the *label* element:
 - *v-model="getCurrentQuestion.selected"*: This binds the selected value to the getCurrentQuestion.selected property. When the user selects an option, this value is updated.
 - *:disabled="getCurrentQuestion.selected"*: If getCurrentQuestion.selected is not null, it means that the user has made a selection, and this option should be disabled.
 
-*<span>{{ option }}</span>*: This span element displays the text of the current option.
+```<span>{{ option }}</span>```: This span element displays the text of the current option.
 
 ```
 			<button 
@@ -775,7 +779,7 @@ Inside the *label* element:
 			</button>
 ```
 
-*<button>*: This button element is used for navigating to the next question or finishing the quiz.
+```<button>```: This button element is used for navigating to the next question or finishing the quiz.
 
 *@click="NextQuestion"*: This @click directive registers a click event handler, so when the button is clicked, the NextQuestion function is called to move to the next question.
 
@@ -807,11 +811,11 @@ And quick functionality presented below:
 
 This section ia a part of your Vue.js template and is used to display the user's quiz results. 
 
-*<section v-else>*: This section element is conditionally displayed using v-else. This means it will be shown when the preceding condition (likely related to whether the user has completed the quiz) is false. In other words, if the quiz is not completed, the section with the final quiz results will not be displayed.
+```<section v-else>```: This section element is conditionally displayed using v-else. This means it will be shown when the preceding condition (likely related to whether the user has completed the quiz) is false. In other words, if the quiz is not completed, the section with the final quiz results will not be displayed.
 
-*<h2>You have finished the quiz!</h2>*: This h2 element displays a message to the user when they have successfully completed the quiz. It informs the user that they have finished the quiz.
+```<h2>You have finished the quiz!</h2>```: This h2 element displays a message to the user when they have successfully completed the quiz. It informs the user that they have finished the quiz.
 
-*<p>Your score is {{ score }}/{{ questions.length }}</p>*: This p element displays the user's quiz score. It uses the score computed property to dynamically show the user's score. The score is presented as *"{{ score }}/{{ questions.length }}"*, where score is the number of correct answers, and questions.length represents the total number of questions in the quiz. This format typically shows the user's correct answers out of the total possible score.
+```<p>Your score is {{ score }}/{{ questions.length }}</p>```: This p element displays the user's quiz score. It uses the score computed property to dynamically show the user's score. The score is presented as ```"{{ score }}/{{ questions.length }}```, where score is the number of correct answers, and questions.length represents the total number of questions in the quiz. This format typically shows the user's correct answers out of the total possible score.
 
 This section is an essential part of the user interface in your Vue.js quiz application as it provides feedback and displays the user's final score when they complete the quiz. It's a great way to give users a sense of achievement and to summarize their performance in the quiz.
 
