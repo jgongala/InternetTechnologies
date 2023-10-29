@@ -955,11 +955,12 @@ You made it. You created your first vue.js application
 ![gif2](https://github.com/jgongala/InternetTechnologies/assets/65823190/7fcad215-c7c6-446d-967b-13c6c98e140f)
 
 
-
-
 That's it! You've successfully set up a Vue.js project and are ready to start building your web application. For more details and advanced configuration options, you can refer to the official [Vue.js documentation](https://vuejs.org/) and [Vue CLI documentation](https://cli.vuejs.org/).
 
+## Deploying on EC2
 
+After discussion with other group, they suggested that we can attach link to their extended tutorial about EC2.
+[EC2 Tutorial](https://github.com/NickPaterson/EC2-Tutorial/blob/main/EC2-Tutorial.md) 
 
 ## [Presentation](index.md)
 
