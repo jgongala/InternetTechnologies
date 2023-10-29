@@ -672,7 +672,7 @@ The *SetAnswer* function appears to be responsible for recording the user's sele
 This function is an important part of your Vue.js quiz application because it manages the user's interactions with the questions. When a user selects an answer, it records their choice for the current question and then resets the selection for the next question, ensuring a clean state for each question.
 
 
-**First Front End changes - Displat question**
+**First Front End changes - Display question**
 
 ```
 <template>
@@ -683,13 +683,266 @@ This function is an important part of your Vue.js quiz application because it ma
     <section class="quiz">
       <div class="quiz-info">
 
-        <span class="question">
-          {{ getCurrentQuestion.question}}  
+	<span class="question">{{ getCurrentQuestion.question }}</span>
+	<span class="score">Score {{ score }}/{{ questions.length }}</span>
     </section>
 
   </main>
 </template>
 ```
+
+Now we are going to make first changes in our template. It displays the current question to the user within the "quiz" section of our application and currenct score out of all points available.
+
+Just to reiterate, this template is responsible for rendering the main structure of our quiz application, including the quiz title ("Quiz") and the current question from the getCurrentQuestion computed property. 
+
+Look how our app starts looking:
+
+![app13](https://github.com/jgongala/InternetTechnologies/assets/65823190/08da5a9d-5782-40d9-960a-a56a0a24dacb)
+
+Not bad isn't it? But we still need to work in template to add functionality to our app.
+
+**Question options and navigation**
+
+In this bunch of code that is a part of a Vue.js template for our quiz application we will add options for the current question and a button for navigating to the next question or finishing the quiz. 
+
+*Option*
+
+```
+			<div class="options">
+				<label 
+					v-for="(option, index) in getCurrentQuestion.options" 
+					:for="'option' + index" 
+					:class="`option ${
+						getCurrentQuestion.selected == index 
+							? index == getCurrentQuestion.answer 
+								? 'correct' 
+								: 'wrong'
+							: ''
+					} ${
+						getCurrentQuestion.selected != null &&
+						index != getCurrentQuestion.selected
+							? 'disabled'
+							: ''
+					}`">
+					<inpu
+						type="radio" 
+						:id="'option' + index" 
+						:name="getCurrentQuestion.index" 
+						:value="index" 
+						v-model="getCurrentQuestion.selected" 
+						:disabled="getCurrentQuestion.selected"
+						@change="SetAnswer" 
+					/>
+					<span>{{ option }}</span>
+				</label>
+			</div>
+
+```
+
+*<div class="options">*: This div element wraps the options for the current question. It appears to be a container for displaying the multiple-choice options to the user.
+
+*v-for="(option, index) in getCurrentQuestion.options"*: This v-for directive loops through the options array of the current question using option as the value and index as the index. It allows you to render each option.
+
+*:for="'option' + index"*: This :for binding is used to set the for attribute of the label element, associating it with the corresponding radio input element. This is a common practice in HTML for accessibility purposes.
+
+*:class="..."*: This binding is used to dynamically set the class of the label element. The classes are determined based on several conditions:
+- *option*: This class is always applied to each option.
+- If *getCurrentQuestion.selected* is equal to index (the current option selected by the user), it checks if index is also equal to getCurrentQuestion.answer (the correct answer). If both conditions are met, it adds the class 'correct'; otherwise, it adds the class 'wrong'.
+- If *getCurrentQuestion.selected* is not null and index is not equal to *getCurrentQuestion.selected*, it adds the class 'disabled'. This likely indicates that the user has made a selection, and other options should be disabled.
+
+Inside the *label* element:
+
+- *<input ...>*: This input element is of type "radio" and represents a single choice for the current question. It is associated with a specific option and can be selected by the user.
+- *:id="'option' + index"*: This sets the id attribute of the radio input element, making it unique for each option.
+- *:name="getCurrentQuestion.index"*: This sets the name attribute for the radio input, ensuring that only one option can be selected within the same question. The name is based on the current question's index.
+- *:value="index"*: This sets the value for the radio input to index, which is a unique identifier for each option.
+- *v-model="getCurrentQuestion.selected"*: This binds the selected value to the getCurrentQuestion.selected property. When the user selects an option, this value is updated.
+- *:disabled="getCurrentQuestion.selected"*: If getCurrentQuestion.selected is not null, it means that the user has made a selection, and this option should be disabled.
+
+*<span>{{ option }}</span>*: This span element displays the text of the current option.
+
+```
+			<button 
+				@click="NextQuestion" 
+				:disabled="!getCurrentQuestion.selected">
+				{{ 
+					getCurrentQuestion.index == questions.length - 1 
+						? 'Finish' 
+						: getCurrentQuestion.selected == null
+							? 'Select an option'
+							: 'Next question'
+				}}
+			</button>
+```
+
+*<button>*: This button element is used for navigating to the next question or finishing the quiz.
+
+*@click="NextQuestion"*: This @click directive registers a click event handler, so when the button is clicked, the NextQuestion function is called to move to the next question.
+
+*:disabled="!getCurrentQuestion.selected"*: The button is disabled if getCurrentQuestion.selected is null, indicating that the user hasn't made a selection. When the user selects an option, the button becomes enabled.
+
+The content inside the button, enclosed within double curly braces {{ ... }}, is dynamically generated based on several conditions:
+
+- *getCurrentQuestion.index == questions.length - 1*: If the current question is the last question (determined by comparing the current question's index with the total number of questions minus 1), the button text is 'Finish'.
+- *getCurrentQuestion.selected == null*: If the user hasn't selected an option, the button text is 'Select an option'.
+- If neither of the above conditions is met, the button text is 'Next question'.
+
+This code represents the user interface for displaying questions and options and controlling the navigation in your Vue.js quiz application. It provides a dynamic and interactive quiz experience for users. And our application looks like this now:
+
+![app14](https://github.com/jgongala/InternetTechnologies/assets/65823190/156f6c19-7721-49fa-845e-eda311402986)
+![app15](https://github.com/jgongala/InternetTechnologies/assets/65823190/92907076-f75b-4fb0-889a-d18084971631)
+
+And quick functionality presented below:
+
+![gif1](https://github.com/jgongala/InternetTechnologies/assets/65823190/4063afc9-60f7-4313-b8bf-1620d864885e)
+
+**Completed Quiz**
+
+```
+		<section v-else>
+			<h2>You have finished the quiz!</h2>
+			<p>Your score is {{ score }}/{{ questions.length }}</p>
+		</section>
+```
+
+This section ia a part of your Vue.js template and is used to display the user's quiz results. 
+
+*<section v-else>*: This section element is conditionally displayed using v-else. This means it will be shown when the preceding condition (likely related to whether the user has completed the quiz) is false. In other words, if the quiz is not completed, the section with the final quiz results will not be displayed.
+
+*<h2>You have finished the quiz!</h2>*: This h2 element displays a message to the user when they have successfully completed the quiz. It informs the user that they have finished the quiz.
+
+*<p>Your score is {{ score }}/{{ questions.length }}</p>*: This p element displays the user's quiz score. It uses the score computed property to dynamically show the user's score. The score is presented as *"{{ score }}/{{ questions.length }}"*, where score is the number of correct answers, and questions.length represents the total number of questions in the quiz. This format typically shows the user's correct answers out of the total possible score.
+
+This section is an essential part of the user interface in your Vue.js quiz application as it provides feedback and displays the user's final score when they complete the quiz. It's a great way to give users a sense of achievement and to summarize their performance in the quiz.
+
+** Final Touch - let's make it pretty*
+
+Since our application is fully functional, it's time to make our application pretty.
+
+```
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrata', sans-serif;
+  }
+
+  body {
+    background-color: #EDC7B7;
+    color: #123c69;
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+  }
+
+  h1 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.quiz {
+	padding: 1rem;
+	width: 100%;
+	max-width: 640px;
+}
+
+.quiz-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.quiz-info .question {
+	color: #123c69;
+	font-size: 1.25rem;
+}
+
+.quiz-info.score {
+	color:#123c69;
+	font-size: 1.25rem;
+}
+
+.options {
+	margin-bottom: 1rem;
+}
+
+.option {
+	padding: 1rem;
+	display: block;
+	background-color: #EEE2DC;
+	margin-bottom: 0.5rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.option:hover {
+	background-color: #BAB2B5;
+}
+
+.option.correct {
+	background-color: #2cce7d;
+}
+
+.option.wrong {
+	background-color: #ff5a5f;
+}
+
+.option:last-of-type {
+	margin-bottom: 0;
+}
+
+.option.disabled {
+	opacity: 0.5;
+}
+
+.option input {
+	display: none;
+}
+
+button {
+	appearance: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	background-color: #EEE2DC;
+	color:  #123c69;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	border-radius: 0.5rem;
+}
+
+button:disabled {
+	opacity: 0.5;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+p {
+	color:  #123c69;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+</style>
+```
+
+You made it. You created your first vue.js application
+
+![gif2](https://github.com/jgongala/InternetTechnologies/assets/65823190/7fcad215-c7c6-446d-967b-13c6c98e140f)
+
+
 
 
 That's it! You've successfully set up a Vue.js project and are ready to start building your web application. For more details and advanced configuration options, you can refer to the official [Vue.js documentation](https://vuejs.org/) and [Vue CLI documentation](https://cli.vuejs.org/).
