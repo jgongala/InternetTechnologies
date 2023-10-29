@@ -7,6 +7,7 @@
 2. [Basics Vue.js Components](#basics-vuejs-components)
 3. [Vue.js Project Setup](#vuejs-project-setup)
 4. [Create Quiz App with us](#create-quiz-app-with-us)
+5. [Deploying on EC2](#deploying-on-EC2)
 
 
 ## Getting Started with your code - template file
