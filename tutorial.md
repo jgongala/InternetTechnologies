@@ -1,7 +1,7 @@
 
 ## Vue.JS Tutorial
 
-## Contents
+### Contents
 [Getting Started with your code - template file](#Getting Started with your code - template file)
 [Vue.js Project Setup](#Vue.js Project Setup)
 [Create Quiz App with us](#Create Quiz App with us)
